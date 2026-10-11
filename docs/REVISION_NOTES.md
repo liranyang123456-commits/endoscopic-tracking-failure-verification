@@ -258,8 +258,8 @@ proxy rankings, frame-level significance claims, incompatible legacy comparisons
 and claims that all variants share an adaptive-gradient front-end. Old results
 remain explicitly labeled archival diagnostics.
 
-The manuscript acknowledges an AI assistant using Copilot SDK in VS Code was
-used solely for language editing and style polishing of the manuscript text.
-Experimental results are computed outputs, not AI-invented observations. Authors
-must review scientific claims, code, citations, permissions, submission history
-and author approvals before submitting.
+The manuscript acknowledges that Copilot SDK in VS Code was used solely for
+language editing and style polishing of the manuscript text. Experimental
+results are computed outputs of the released code, not AI-generated
+observations. Authors must review scientific claims, code, citations,
+permissions, submission history and author approvals before submitting.
