@@ -977,10 +977,11 @@ Henan University of Technology\\
 Henan University of Technology, Zhengzhou 450001, China}
 \date{11 October 2026}
 \begin{document}
-\begin{letter}{Ms.\ Helene Hu\\
-Section Managing Editor\\
-\textit{Mathematics} Editorial Office, MDPI}
-\opening{Dear Ms.\ Hu,}
+\begin{letter}{Prof.\ Dr.\ Francisco Chiclana, Editor-in-Chief\\
+Prof.\ Dr.\ Gianluca Vinti and Prof.\ Dr.\ Ivan Gerace, Guest Editors of the Special Issue\\
+cc: Ms.\ Helene Hu, Section Managing Editor\\
+\textit{Mathematics} Editorial Office, MDPI, Basel, Switzerland}
+\opening{Dear Professor Chiclana, Professor Vinti and Professor Gerace,}
 
 Please consider our original research article ``""" + TITLE + r"""'' for the \textit{Mathematics} Special Issue ``Mathematical Methods for Image Processing and Understanding, 2nd Edition''.
 
