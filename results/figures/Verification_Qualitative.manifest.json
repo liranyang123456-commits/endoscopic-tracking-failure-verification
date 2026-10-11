@@ -1,0 +1,50 @@
+{
+  "cases": {
+    "nanotrack/case_2_3": {
+      "thumbnail_frames": [
+        97,
+        166,
+        558,
+        907
+      ],
+      "scored_frames": 666,
+      "frozen_csv_reproduced_within_1e-4": true,
+      "note": "Large gain: native confidence 0.49, fused 1.00"
+    },
+    "nanotrack/case_1_1": {
+      "thumbnail_frames": [
+        1,
+        147,
+        273,
+        944
+      ],
+      "scored_frames": 944,
+      "frozen_csv_reproduced_within_1e-4": true,
+      "note": "Gain with false alarms: specificity 0.56"
+    },
+    "nanotrack/case_5_4": {
+      "thumbnail_frames": [
+        1,
+        49,
+        68,
+        749
+      ],
+      "scored_frames": 745,
+      "frozen_csv_reproduced_within_1e-4": true,
+      "note": "Weak case: fused AUROC 0.60"
+    },
+    "stark/case_1_2": {
+      "thumbnail_frames": [
+        1,
+        217,
+        221,
+        636
+      ],
+      "scored_frames": 359,
+      "frozen_csv_reproduced_within_1e-4": true,
+      "note": "Fused below native confidence: 0.77 vs 0.99"
+    }
+  },
+  "boxes": "green = supplied ground truth, red = unchanged proposer box",
+  "re_tracking": "identical frozen proposer; frozen CSV values reproduced frame by frame"
+}

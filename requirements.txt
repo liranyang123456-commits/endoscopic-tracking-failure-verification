@@ -1,0 +1,17 @@
+numpy
+scipy
+pandas
+torch
+torchvision
+opencv-contrib-python
+matplotlib
+PyYAML
+timm
+easydict
+yacs
+gdown
+pytest
+tensorboardX
+jpeg4py
+visdom
+scikit-learn

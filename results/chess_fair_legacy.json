@@ -1,0 +1,1763 @@
+{
+  "methods": {
+    "NanoTrack": {
+      "n_sequences": 11,
+      "n_units": 19,
+      "n_gt_frames": 3826,
+      "n_missing_predictions": 0,
+      "aggregation": "equal-unit mean within sequence, equal-sequence macro mean",
+      "center_error": "valid predictions only; absent predictions are misses for overlap/precision",
+      "sequence_metrics": {
+        "bbox_iou": {
+          "capture_photos11": 0.11197622511246265,
+          "captured_photos1": 0.5570558356269624,
+          "captured_photos10": 0.8631279988390553,
+          "captured_photos2": 0.6522771811663027,
+          "captured_photos3": 0.7768784901309449,
+          "captured_photos4": 0.7233892892420387,
+          "captured_photos5": 0.8311389124052599,
+          "captured_photos6": 0.8234080503996648,
+          "captured_photos7": 0.8693271518087672,
+          "captured_photos8": 0.802483276966306,
+          "captured_photos9": 0.7478112464800849
+        },
+        "success_05": {
+          "capture_photos11": 0.1327683615819209,
+          "captured_photos1": 0.7236171558233828,
+          "captured_photos10": 1.0,
+          "captured_photos2": 0.8213317847464189,
+          "captured_photos3": 0.9403553299492385,
+          "captured_photos4": 0.9370629370629371,
+          "captured_photos5": 0.9935897435897436,
+          "captured_photos6": 1.0,
+          "captured_photos7": 1.0,
+          "captured_photos8": 0.97,
+          "captured_photos9": 0.9523809523809523
+        },
+        "precision_20": {
+          "capture_photos11": 0.10734463276836158,
+          "captured_photos1": 0.4844278912323773,
+          "captured_photos10": 0.7923076923076924,
+          "captured_photos2": 0.34765776229190865,
+          "captured_photos3": 0.8375634517766497,
+          "captured_photos4": 0.6526806526806527,
+          "captured_photos5": 0.5566347780814787,
+          "captured_photos6": 1.0,
+          "captured_photos7": 0.9090909090909091,
+          "captured_photos8": 0.9450000000000001,
+          "captured_photos9": 0.4655822725129656
+        },
+        "HOTA": {
+          "capture_photos11": 0.0611581051977958,
+          "captured_photos1": 0.46180722761611787,
+          "captured_photos10": 0.8608224973938254,
+          "captured_photos2": 0.608180705402343,
+          "captured_photos3": 0.7249686884252405,
+          "captured_photos4": 0.6617166377823447,
+          "captured_photos5": 0.8226433603270044,
+          "captured_photos6": 0.8248627980206928,
+          "captured_photos7": 0.866723479704266,
+          "captured_photos8": 0.7933737397527223,
+          "captured_photos9": 0.7141710534074038
+        },
+        "AssA": {
+          "capture_photos11": 0.0611581051977958,
+          "captured_photos1": 0.46180722761611787,
+          "captured_photos10": 0.8608224973938254,
+          "captured_photos2": 0.608180705402343,
+          "captured_photos3": 0.7249686884252405,
+          "captured_photos4": 0.6617166377823447,
+          "captured_photos5": 0.8226433603270044,
+          "captured_photos6": 0.8248627980206928,
+          "captured_photos7": 0.866723479704266,
+          "captured_photos8": 0.7933737397527223,
+          "captured_photos9": 0.7141710534074039
+        }
+      },
+      "bbox_iou": {
+        "mean": 0.7053521507434408,
+        "sample_sd": 0.21797312878984
+      },
+      "success_05": {
+        "mean": 0.8610096604667813,
+        "sample_sd": 0.2566371541089105
+      },
+      "precision_20": {
+        "mean": 0.6452990947948177,
+        "sample_sd": 0.28069119892903766
+      },
+      "HOTA": {
+        "mean": 0.6727662084572507,
+        "sample_sd": 0.2367336698866597
+      },
+      "AssA": {
+        "mean": 0.6727662084572507,
+        "sample_sd": 0.2367336698866597
+      },
+      "pooled_official_trackeval": {
+        "HOTA": 0.6399874133390879,
+        "DetA": 0.5778470740834039,
+        "AssA": 0.7105096050204698,
+        "LocA": 0.8173248277208223,
+        "MOTA": 0.6957658128593832,
+        "MOTP": 0.7876052329643843
+      },
+      "provenance": "frozen official OpenCV model",
+      "source_sha256": {
+        "F:\\MIS_Pose_Track_Re3D\\BenchmarkSuite\\Results\\Chessboard\\Exp_Results_Chessboard_Final_Optimize_v3\\capture_photos11\\boards\\a\\nanotrack_rows.csv": "d66f064407f131a85dc35e9b205cae1329157f34e4f5e0d2e1a867041886c0c1",
+        "F:\\MIS_Pose_Track_Re3D\\BenchmarkSuite\\Results\\Chessboard\\Exp_Results_Chessboard_Final_Optimize_v3\\capture_photos11\\boards\\unknown_from_threshold\\nanotrack_rows.csv": "de0e02006e03f3c241e55ff41d94ae73548da7a7ff696a0acd0b43e733ff11e6",
+        "F:\\MIS_Pose_Track_Re3D\\BenchmarkSuite\\Results\\Chessboard\\Exp_Results_Chessboard_Final_Optimize_v3\\captured_photos1\\boards\\a\\nanotrack_rows.csv": "99271d39a645458d0cdc86276d05a7537b324d8ebfc633b1c1acc193975c194a",
+        "F:\\MIS_Pose_Track_Re3D\\BenchmarkSuite\\Results\\Chessboard\\Exp_Results_Chessboard_Final_Optimize_v3\\captured_photos1\\boards\\b\\nanotrack_rows.csv": "b5fcf16cfde49d63fa1811caa8cd23d4595f23a6658d85a4a256bb2039cb0b81",
+        "F:\\MIS_Pose_Track_Re3D\\BenchmarkSuite\\Results\\Chessboard\\Exp_Results_Chessboard_Final_Optimize_v3\\captured_photos10\\boards\\a\\nanotrack_rows.csv": "72a913e1a213f978729fff3685a15b2e00a194e02df824a95b137071ff0ed808",
+        "F:\\MIS_Pose_Track_Re3D\\BenchmarkSuite\\Results\\Chessboard\\Exp_Results_Chessboard_Final_Optimize_v3\\captured_photos10\\boards\\b\\nanotrack_rows.csv": "e1afa26f76233bd39999189f60b6a8c6a05d4e9bbaba419abf93d88a2c068df9",
+        "F:\\MIS_Pose_Track_Re3D\\BenchmarkSuite\\Results\\Chessboard\\Exp_Results_Chessboard_Final_Optimize_v3\\captured_photos2\\boards\\b\\nanotrack_rows.csv": "e8d9cbddbd70a84493476c40f134e7e7459687b233f23ab35b1c9d03d664783f",
+        "F:\\MIS_Pose_Track_Re3D\\BenchmarkSuite\\Results\\Chessboard\\Exp_Results_Chessboard_Final_Optimize_v3\\captured_photos2\\boards\\c\\nanotrack_rows.csv": "49548b9d4310fa12f5e5c9990361bf4287777361b967f00dc1e8ed6ad74d048f",
+        "F:\\MIS_Pose_Track_Re3D\\BenchmarkSuite\\Results\\Chessboard\\Exp_Results_Chessboard_Final_Optimize_v3\\captured_photos3\\boards\\a\\nanotrack_rows.csv": "85dc1da3023d2f72796fb1e1440abb4c80fb77d7e63e9c4b44e330603237132a",
+        "F:\\MIS_Pose_Track_Re3D\\BenchmarkSuite\\Results\\Chessboard\\Exp_Results_Chessboard_Final_Optimize_v3\\captured_photos3\\boards\\unknown_from_threshold\\nanotrack_rows.csv": "961e3ff7fb37d4b0949bafe0d5b7400a6a7e0ced06508360315888a9ba391c0f",
+        "F:\\MIS_Pose_Track_Re3D\\BenchmarkSuite\\Results\\Chessboard\\Exp_Results_Chessboard_Final_Optimize_v3\\captured_photos4\\nanotrack_rows.csv": "49cdce8f1d54772b41679f1aed5f898e0b8d29dc35dc766b005a8fbb22161ca0",
+        "F:\\MIS_Pose_Track_Re3D\\BenchmarkSuite\\Results\\Chessboard\\Exp_Results_Chessboard_Final_Optimize_v3\\captured_photos5\\boards\\b\\nanotrack_rows.csv": "71c8e503b3f755880ed62c84257cb55e0a0afc245b177cfeefa9e380bd8111dc",
+        "F:\\MIS_Pose_Track_Re3D\\BenchmarkSuite\\Results\\Chessboard\\Exp_Results_Chessboard_Final_Optimize_v3\\captured_photos5\\boards\\c\\nanotrack_rows.csv": "0d14fb978073074ade20e915888ece4d5b72cb1c5c56735a4c2a8a832b5a54f3",
+        "F:\\MIS_Pose_Track_Re3D\\BenchmarkSuite\\Results\\Chessboard\\Exp_Results_Chessboard_Final_Optimize_v3\\captured_photos5\\boards\\unknown_from_threshold\\nanotrack_rows.csv": "cc51a558b3e71381641a38e0fe54317b79e13a754162f94f36b4a34583598dca",
+        "F:\\MIS_Pose_Track_Re3D\\BenchmarkSuite\\Results\\Chessboard\\Exp_Results_Chessboard_Final_Optimize_v3\\captured_photos6\\boards\\a\\nanotrack_rows.csv": "0ef2d371e59e314689655ae8ec2559888d8b326c637eee8c9b8a1f4491f1bad0",
+        "F:\\MIS_Pose_Track_Re3D\\BenchmarkSuite\\Results\\Chessboard\\Exp_Results_Chessboard_Final_Optimize_v3\\captured_photos6\\boards\\b\\nanotrack_rows.csv": "e56e8d2b33059998652b05c248272af8ca7fbb17fd857e9c38a22f357fbbe807",
+        "F:\\MIS_Pose_Track_Re3D\\BenchmarkSuite\\Results\\Chessboard\\Exp_Results_Chessboard_Final_Optimize_v3\\captured_photos7\\nanotrack_rows.csv": "b1350460ae5d8e4e35bd46453a6be6be652a2d9e52ae0a5fd3fd1efbd7633451",
+        "F:\\MIS_Pose_Track_Re3D\\BenchmarkSuite\\Results\\Chessboard\\Exp_Results_Chessboard_Final_Optimize_v3\\captured_photos8\\boards\\a\\nanotrack_rows.csv": "2c6e1390c1d871b87c405ebeed04e8286a8154df5f2e96440574ce4c432e7505",
+        "F:\\MIS_Pose_Track_Re3D\\BenchmarkSuite\\Results\\Chessboard\\Exp_Results_Chessboard_Final_Optimize_v3\\captured_photos8\\boards\\b\\nanotrack_rows.csv": "61eb5617d512fb7b4cabb625cba51e01a5dd4ba42bb8af186418d4f79be8032c",
+        "F:\\MIS_Pose_Track_Re3D\\BenchmarkSuite\\Results\\Chessboard\\Exp_Results_Chessboard_Final_Optimize_v3\\captured_photos8\\boards\\unknown_from_threshold\\nanotrack_rows.csv": "b370eb7b480b527035fd532e7148c9dc164544eca46136287aff4b814b2f3ae2",
+        "F:\\MIS_Pose_Track_Re3D\\BenchmarkSuite\\Results\\Chessboard\\Exp_Results_Chessboard_Final_Optimize_v3\\captured_photos9\\boards\\b\\nanotrack_rows.csv": "f4f1b543e57f4fd5eab8d84dd09a2f81dd1799af34f97c507858a2ab6a7b9268",
+        "F:\\MIS_Pose_Track_Re3D\\BenchmarkSuite\\Results\\Chessboard\\Exp_Results_Chessboard_Final_Optimize_v3\\captured_photos9\\boards\\c\\nanotrack_rows.csv": "ef420402c594a59a389cac0c92472a643f76447b39c531692e8aacc03e77a397"
+      },
+      "missing_prediction_files": [],
+      "predictions_outside_fixed_protocol_not_scored": 0,
+      "source_gt_coordinate_mismatches": 0,
+      "shared_gt_protocol_verified": true
+    },
+    "Ours-Legacy": {
+      "n_sequences": 11,
+      "n_units": 19,
+      "n_gt_frames": 3826,
+      "n_missing_predictions": 0,
+      "aggregation": "equal-unit mean within sequence, equal-sequence macro mean",
+      "center_error": "valid predictions only; absent predictions are misses for overlap/precision",
+      "sequence_metrics": {
+        "bbox_iou": {
+          "capture_photos11": 0.1753864044084041,
+          "captured_photos1": 0.5586754114423087,
+          "captured_photos10": 0.8631279988390553,
+          "captured_photos2": 0.6522771811663027,
+          "captured_photos3": 0.7768784901309449,
+          "captured_photos4": 0.7233892892420387,
+          "captured_photos5": 0.8370416901830376,
+          "captured_photos6": 0.8234080503996648,
+          "captured_photos7": 0.8630011171925087,
+          "captured_photos8": 0.802483276966306,
+          "captured_photos9": 0.7478112464800849
+        },
+        "success_05": {
+          "capture_photos11": 0.1497175141242938,
+          "captured_photos1": 0.7236171558233828,
+          "captured_photos10": 1.0,
+          "captured_photos2": 0.8213317847464189,
+          "captured_photos3": 0.9403553299492385,
+          "captured_photos4": 0.9370629370629371,
+          "captured_photos5": 0.9935897435897436,
+          "captured_photos6": 1.0,
+          "captured_photos7": 1.0,
+          "captured_photos8": 0.97,
+          "captured_photos9": 0.9523809523809523
+        },
+        "precision_20": {
+          "capture_photos11": 0.10734463276836158,
+          "captured_photos1": 0.4844278912323773,
+          "captured_photos10": 0.7923076923076924,
+          "captured_photos2": 0.34765776229190865,
+          "captured_photos3": 0.8375634517766497,
+          "captured_photos4": 0.6526806526806527,
+          "captured_photos5": 0.5566347780814787,
+          "captured_photos6": 1.0,
+          "captured_photos7": 0.898989898989899,
+          "captured_photos8": 0.9450000000000001,
+          "captured_photos9": 0.4655822725129656
+        },
+        "HOTA": {
+          "capture_photos11": 0.09852834588822687,
+          "captured_photos1": 0.4631158703491547,
+          "captured_photos10": 0.8608224973938254,
+          "captured_photos2": 0.608180705402343,
+          "captured_photos3": 0.7249686884252405,
+          "captured_photos4": 0.6617166377823447,
+          "captured_photos5": 0.8226433603270044,
+          "captured_photos6": 0.8248627980206928,
+          "captured_photos7": 0.8587047815939193,
+          "captured_photos8": 0.7933737397527223,
+          "captured_photos9": 0.7141710534074038
+        },
+        "AssA": {
+          "capture_photos11": 0.09852834588822687,
+          "captured_photos1": 0.4631158703491547,
+          "captured_photos10": 0.8608224973938254,
+          "captured_photos2": 0.608180705402343,
+          "captured_photos3": 0.7249686884252405,
+          "captured_photos4": 0.6617166377823447,
+          "captured_photos5": 0.8226433603270044,
+          "captured_photos6": 0.8248627980206928,
+          "captured_photos7": 0.8587047815939193,
+          "captured_photos8": 0.7933737397527223,
+          "captured_photos9": 0.7141710534074039
+        }
+      },
+      "bbox_iou": {
+        "mean": 0.7112254687682416,
+        "sample_sd": 0.2006289079905852
+      },
+      "success_05": {
+        "mean": 0.862550492516088,
+        "sample_sd": 0.25183353647613244
+      },
+      "precision_20": {
+        "mean": 0.6443808211492713,
+        "sample_sd": 0.2797568799715854
+      },
+      "HOTA": {
+        "mean": 0.6755534980311707,
+        "sample_sd": 0.22636934403364703
+      },
+      "AssA": {
+        "mean": 0.6755534980311707,
+        "sample_sd": 0.22636934403364703
+      },
+      "pooled_official_trackeval": {
+        "HOTA": 0.6426393944454867,
+        "DetA": 0.5867000722028678,
+        "AssA": 0.7058353487823151,
+        "LocA": 0.8144354955140389,
+        "MOTA": 0.6989022477783586,
+        "MOTP": 0.7869504257332933
+      },
+      "provenance": "legacy; learning provenance not outer-fold-isolated",
+      "source_sha256": {
+        "F:\\MIS_Pose_Track_Re3D\\BenchmarkSuite\\Results\\Chessboard\\Exp_Results_Chessboard_Final_Optimize_v3\\capture_photos11\\boards\\a\\ours_scheme_c_nano_rows.csv": "13a598d083095f6f6037bac934cc8293e90a1b0fbbc76275ff07c6d8580dbdaf",
+        "F:\\MIS_Pose_Track_Re3D\\BenchmarkSuite\\Results\\Chessboard\\Exp_Results_Chessboard_Final_Optimize_v3\\capture_photos11\\boards\\unknown_from_threshold\\ours_scheme_c_nano_rows.csv": "a72a49333056e4d153e4f703922aec478a707e3a46bf58be9bdefbeb1bacad4d",
+        "F:\\MIS_Pose_Track_Re3D\\BenchmarkSuite\\Results\\Chessboard\\Exp_Results_Chessboard_Final_Optimize_v3\\captured_photos1\\boards\\a\\ours_scheme_c_nano_rows.csv": "98d196c42117a76adcafbe112fba3b36ddea6503c41926bab2a27e1f1e6c9739",
+        "F:\\MIS_Pose_Track_Re3D\\BenchmarkSuite\\Results\\Chessboard\\Exp_Results_Chessboard_Final_Optimize_v3\\captured_photos1\\boards\\b\\ours_scheme_c_nano_rows.csv": "7f6c019bfb5be4464ee544fb9e002bae079ae2164631d69d78ab19a5d06f9aa4",
+        "F:\\MIS_Pose_Track_Re3D\\BenchmarkSuite\\Results\\Chessboard\\Exp_Results_Chessboard_Final_Optimize_v3\\captured_photos10\\boards\\a\\ours_scheme_c_nano_rows.csv": "97f75bb6690fd0e5e4475303faee6c13b4e29606820e884e42f46b90d73a880d",
+        "F:\\MIS_Pose_Track_Re3D\\BenchmarkSuite\\Results\\Chessboard\\Exp_Results_Chessboard_Final_Optimize_v3\\captured_photos10\\boards\\b\\ours_scheme_c_nano_rows.csv": "71bc5c9db605a924f7fb20f345bc8c0ab644f8ee31aac132f8f30b180f18adb1",
+        "F:\\MIS_Pose_Track_Re3D\\BenchmarkSuite\\Results\\Chessboard\\Exp_Results_Chessboard_Final_Optimize_v3\\captured_photos2\\boards\\b\\ours_scheme_c_nano_rows.csv": "1da2821bb4dcd0ea12105d662d3822cefcfeb5ebb37d5b0a476a8a800d5ab317",
+        "F:\\MIS_Pose_Track_Re3D\\BenchmarkSuite\\Results\\Chessboard\\Exp_Results_Chessboard_Final_Optimize_v3\\captured_photos2\\boards\\c\\ours_scheme_c_nano_rows.csv": "1f6b34bbde581089aca85e892e26e8839ddb79b898ae16150748656f7d873173",
+        "F:\\MIS_Pose_Track_Re3D\\BenchmarkSuite\\Results\\Chessboard\\Exp_Results_Chessboard_Final_Optimize_v3\\captured_photos3\\boards\\a\\ours_scheme_c_nano_rows.csv": "92e12e8729f24412e4693184f279ea1fc8a965512a98875f8ab2526f28a8b90e",
+        "F:\\MIS_Pose_Track_Re3D\\BenchmarkSuite\\Results\\Chessboard\\Exp_Results_Chessboard_Final_Optimize_v3\\captured_photos3\\boards\\unknown_from_threshold\\ours_scheme_c_nano_rows.csv": "82df0f949e0c7310e683f0f9e85d41be6706e7d024065a4cf3f3503614824770",
+        "F:\\MIS_Pose_Track_Re3D\\BenchmarkSuite\\Results\\Chessboard\\Exp_Results_Chessboard_Final_Optimize_v3\\captured_photos4\\ours_scheme_c_nano_rows.csv": "514e2d1c9786fb1b173919102e93619f1df8da954f13dcf42ea137ef660239fd",
+        "F:\\MIS_Pose_Track_Re3D\\BenchmarkSuite\\Results\\Chessboard\\Exp_Results_Chessboard_Final_Optimize_v3\\captured_photos5\\boards\\b\\ours_scheme_c_nano_rows.csv": "27105bbb2f87342504a6e361397139da9efcc2817b40604539dd5674ab88bb48",
+        "F:\\MIS_Pose_Track_Re3D\\BenchmarkSuite\\Results\\Chessboard\\Exp_Results_Chessboard_Final_Optimize_v3\\captured_photos5\\boards\\c\\ours_scheme_c_nano_rows.csv": "6988978608b77d9420f12b0ab3e4d8aa203aef9c5ced6847035cc0982369a09c",
+        "F:\\MIS_Pose_Track_Re3D\\BenchmarkSuite\\Results\\Chessboard\\Exp_Results_Chessboard_Final_Optimize_v3\\captured_photos5\\boards\\unknown_from_threshold\\ours_scheme_c_nano_rows.csv": "3f0bd38cabdef59b6f8a9ac96345eb8f0e254c80e5f5a6cce2ea9aa820ab4762",
+        "F:\\MIS_Pose_Track_Re3D\\BenchmarkSuite\\Results\\Chessboard\\Exp_Results_Chessboard_Final_Optimize_v3\\captured_photos6\\boards\\a\\ours_scheme_c_nano_rows.csv": "937fb767829597416df3d9125f61ac27310b1af7e87542d51b981368e8701c5e",
+        "F:\\MIS_Pose_Track_Re3D\\BenchmarkSuite\\Results\\Chessboard\\Exp_Results_Chessboard_Final_Optimize_v3\\captured_photos6\\boards\\b\\ours_scheme_c_nano_rows.csv": "e0de37d045f84edbab8adc4d90c8e43bfdf5ace65900c74bdb980a0de637f0ce",
+        "F:\\MIS_Pose_Track_Re3D\\BenchmarkSuite\\Results\\Chessboard\\Exp_Results_Chessboard_Final_Optimize_v3\\captured_photos7\\ours_scheme_c_nano_rows.csv": "10c118a3b05b1844a1de10d99dd22c232a362e8adff6634b80c8fbdd1bc034c9",
+        "F:\\MIS_Pose_Track_Re3D\\BenchmarkSuite\\Results\\Chessboard\\Exp_Results_Chessboard_Final_Optimize_v3\\captured_photos8\\boards\\a\\ours_scheme_c_nano_rows.csv": "c94d595cc77443555d15aaa5cabf4e77823a9d989bcd3fa37205262630d836f6",
+        "F:\\MIS_Pose_Track_Re3D\\BenchmarkSuite\\Results\\Chessboard\\Exp_Results_Chessboard_Final_Optimize_v3\\captured_photos8\\boards\\b\\ours_scheme_c_nano_rows.csv": "481cbdb895a74ffa9746d9c2187ee0d19188234c904a05fa3ab1ff56047b22b8",
+        "F:\\MIS_Pose_Track_Re3D\\BenchmarkSuite\\Results\\Chessboard\\Exp_Results_Chessboard_Final_Optimize_v3\\captured_photos8\\boards\\unknown_from_threshold\\ours_scheme_c_nano_rows.csv": "a1c29f217a21d13a71995a36ebbb8dd67fed7ade3e114d622cab4acbd289be6c",
+        "F:\\MIS_Pose_Track_Re3D\\BenchmarkSuite\\Results\\Chessboard\\Exp_Results_Chessboard_Final_Optimize_v3\\captured_photos9\\boards\\b\\ours_scheme_c_nano_rows.csv": "216ce237d87ec81bd7b38c77fb4598bfc37ea42ac16db9268a2af51900f95030",
+        "F:\\MIS_Pose_Track_Re3D\\BenchmarkSuite\\Results\\Chessboard\\Exp_Results_Chessboard_Final_Optimize_v3\\captured_photos9\\boards\\c\\ours_scheme_c_nano_rows.csv": "e9a98d3f4fe189394a768a2e66e46720e57582b38e185e4185d69e846b58d3d6"
+      },
+      "missing_prediction_files": [],
+      "predictions_outside_fixed_protocol_not_scored": 0,
+      "source_gt_coordinate_mismatches": 0,
+      "shared_gt_protocol_verified": true
+    },
+    "CSRT": {
+      "n_sequences": 11,
+      "n_units": 19,
+      "n_gt_frames": 3826,
+      "n_missing_predictions": 1,
+      "aggregation": "equal-unit mean within sequence, equal-sequence macro mean",
+      "center_error": "valid predictions only; absent predictions are misses for overlap/precision",
+      "sequence_metrics": {
+        "bbox_iou": {
+          "capture_photos11": 0.05392317076092677,
+          "captured_photos1": 0.20319413603512226,
+          "captured_photos10": 0.5179297456418052,
+          "captured_photos2": 0.27427952128714056,
+          "captured_photos3": 0.06089159019042,
+          "captured_photos4": 0.13224729042486558,
+          "captured_photos5": 0.19656118964103864,
+          "captured_photos6": 0.6097909695224334,
+          "captured_photos7": 0.3252401076057536,
+          "captured_photos8": 0.2280978476157079,
+          "captured_photos9": 0.22724608024367482
+        },
+        "success_05": {
+          "capture_photos11": 0.025423728813559324,
+          "captured_photos1": 0.08207324331361827,
+          "captured_photos10": 0.525,
+          "captured_photos2": 0.18660472319008903,
+          "captured_photos3": 0.025380710659898477,
+          "captured_photos4": 0.07925407925407925,
+          "captured_photos5": 0.12034686971235194,
+          "captured_photos6": 0.5757575757575758,
+          "captured_photos7": 0.23232323232323232,
+          "captured_photos8": 0.045,
+          "captured_photos9": 0.10054219707685054
+        },
+        "precision_20": {
+          "capture_photos11": 0.011299435028248588,
+          "captured_photos1": 0.01079213629431239,
+          "captured_photos10": 0.5115384615384615,
+          "captured_photos2": 0.060201316298877275,
+          "captured_photos3": 0.017766497461928935,
+          "captured_photos4": 0.011655011655011656,
+          "captured_photos5": 0.004230118443316413,
+          "captured_photos6": 0.9545454545454546,
+          "captured_photos7": 0.21212121212121213,
+          "captured_photos8": 0.01,
+          "captured_photos9": 0.0049504950495049506
+        },
+        "HOTA": {
+          "capture_photos11": 0.026160096101812202,
+          "captured_photos1": 0.13804195575999412,
+          "captured_photos10": 0.4988068563159138,
+          "captured_photos2": 0.17973877904202218,
+          "captured_photos3": 0.029168362220210214,
+          "captured_photos4": 0.07379911220081647,
+          "captured_photos5": 0.13989767037141002,
+          "captured_photos6": 0.5811380248727724,
+          "captured_photos7": 0.22709667558527744,
+          "captured_photos8": 0.1632433742401963,
+          "captured_photos9": 0.15439252259365793
+        },
+        "AssA": {
+          "capture_photos11": 0.026160096101812202,
+          "captured_photos1": 0.13804195575999412,
+          "captured_photos10": 0.4988068563159138,
+          "captured_photos2": 0.17973877904202218,
+          "captured_photos3": 0.029168362220210214,
+          "captured_photos4": 0.07379911220081647,
+          "captured_photos5": 0.13989767037141002,
+          "captured_photos6": 0.5811380248727724,
+          "captured_photos7": 0.22709667558527744,
+          "captured_photos8": 0.1632433742401963,
+          "captured_photos9": 0.15439252259365793
+        }
+      },
+      "bbox_iou": {
+        "mean": 0.2572183317244444,
+        "sample_sd": 0.1735024687401226
+      },
+      "success_05": {
+        "mean": 0.18160966910011409,
+        "sample_sd": 0.19340095068753926
+      },
+      "precision_20": {
+        "mean": 0.16446364894875715,
+        "sample_sd": 0.30409785529188615
+      },
+      "HOTA": {
+        "mean": 0.20104394811855297,
+        "sample_sd": 0.1794149090025652
+      },
+      "AssA": {
+        "mean": 0.20104394811855297,
+        "sample_sd": 0.1794149090025652
+      },
+      "pooled_official_trackeval": {
+        "HOTA": 0.15573038592427202,
+        "DetA": 0.11043596727670965,
+        "AssA": 0.23628442089867488,
+        "LocA": 0.6739092399270948,
+        "MOTA": -0.7916884474647151,
+        "MOTP": 0.6842049832253038
+      },
+      "provenance": "OpenCV baseline",
+      "source_sha256": {
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\capture_photos11\\boards\\a\\csrt_rows.csv": "1bca99821f295d3637cecc8f1098e963855c8a8406d4f296390d204977c17a29",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\capture_photos11\\boards\\unknown_from_threshold\\csrt_rows.csv": "68b01126d17b402b09965f349a45fbe7166a2d69000134663691be3cc66acdb1",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos1\\boards\\a\\csrt_rows.csv": "dc038b4d649f8384fbc0b748ccb8739a751339d1a7fa619022675a2027d71c6b",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos1\\boards\\b\\csrt_rows.csv": "c50a3c9f1c0317aa81fe9c92b17d606dd9d99491d89f2317db2e3a22500215f8",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos10\\boards\\a\\csrt_rows.csv": "f83512c6d9108eda935da89369f86891b69fa5ab24be7406001673195dbdad94",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos10\\boards\\b\\csrt_rows.csv": "567cf403bba09308f073c1943e17797d6b3ea954da98ea5a04148794f4409b6a",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos2\\boards\\b\\csrt_rows.csv": "80b9683c84b9383018c3b8e62d90e06db1021db7a1801113119719dda790982d",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos2\\boards\\c\\csrt_rows.csv": "0b6e7e7e5cb5571eb53a4f096db78e845cc3f89a7cace2dbe15ff2847738e9ab",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos3\\boards\\a\\csrt_rows.csv": "97145960ef000b4c44f3f2a4a5b316110918e4f1926ab392acabc1ceae22bbfb",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos4\\csrt_rows.csv": "232066858e83f3bf09e381c32f538630dd57edd176a7aefc20d57f3d940f9ed6",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos5\\boards\\b\\csrt_rows.csv": "d3d203d8c2507cc6e6917c883db681577a9cb6ae00dec789ad89393a3b9c7d3d",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos5\\boards\\c\\csrt_rows.csv": "d41621f9e4229f3fb9ac47e66bf18a01d48809943b6e7ed30cc7293f166e3eb4",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos6\\boards\\a\\csrt_rows.csv": "b8a9aec8b844ca5cb55d8d37944c34cc9661ff52c72f8c2d3eb9c0b9b1d54a77",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos6\\boards\\b\\csrt_rows.csv": "b3418a84a0861231686b6b3571910de255b5721653926b07700da8f4b6dd1ae2",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos7\\csrt_rows.csv": "4cf7c52128ab7ed71b93b45f0312bb6daf9af1031430d712d22c012de43aaa0b",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos8\\boards\\a\\csrt_rows.csv": "2a14ee1d42a667b1c95856c20fefcfc1a0722a7c41195ac284ed1f06391259b6",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos8\\boards\\b\\csrt_rows.csv": "2342886c4bdbfc3c81ae01e318c8680679b64f710f0925cec68a6e602cc8e5b6",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos9\\boards\\b\\csrt_rows.csv": "90c65279b1eeb67b56545674eb682553cfeab4c09f75d53637f30a39e8ca9e54",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos9\\boards\\c\\csrt_rows.csv": "b47e8be2c7b2c51f24e99289f4ed4abac08437b029236e4b2ae2a09b5e73d3a9"
+      },
+      "missing_prediction_files": [
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos3\\boards\\unknown_from_threshold\\csrt_rows.csv",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos5\\boards\\unknown_from_threshold\\csrt_rows.csv",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos8\\boards\\unknown_from_threshold\\csrt_rows.csv"
+      ],
+      "predictions_outside_fixed_protocol_not_scored": 0,
+      "source_gt_coordinate_mismatches": 0,
+      "shared_gt_protocol_verified": true
+    },
+    "SAM": {
+      "n_sequences": 11,
+      "n_units": 19,
+      "n_gt_frames": 3826,
+      "n_missing_predictions": 0,
+      "aggregation": "equal-unit mean within sequence, equal-sequence macro mean",
+      "center_error": "valid predictions only; absent predictions are misses for overlap/precision",
+      "sequence_metrics": {
+        "bbox_iou": {
+          "capture_photos11": 0.08415108929121069,
+          "captured_photos1": 0.21040857056717124,
+          "captured_photos10": 0.5520598256074082,
+          "captured_photos2": 0.16247931217289796,
+          "captured_photos3": 0.019141289146464277,
+          "captured_photos4": 0.021542264827819457,
+          "captured_photos5": 0.44359588861408267,
+          "captured_photos6": 0.6451388731015015,
+          "captured_photos7": 0.4446074717997901,
+          "captured_photos8": 0.47794861990924886,
+          "captured_photos9": 0.21796907866834458
+        },
+        "success_05": {
+          "capture_photos11": 0.1016949152542373,
+          "captured_photos1": 0.1393631663132835,
+          "captured_photos10": 0.6480769230769231,
+          "captured_photos2": 0.21312427409988385,
+          "captured_photos3": 0.0266497461928934,
+          "captured_photos4": 0.011655011655011656,
+          "captured_photos5": 0.4815501757126122,
+          "captured_photos6": 0.9545454545454546,
+          "captured_photos7": 0.43434343434343436,
+          "captured_photos8": 0.5700000000000001,
+          "captured_photos9": 0.23750589344648748
+        },
+        "precision_20": {
+          "capture_photos11": 0.096045197740113,
+          "captured_photos1": 0.18841833128743074,
+          "captured_photos10": 0.5557692307692308,
+          "captured_photos2": 0.14208284939992258,
+          "captured_photos3": 0.0012690355329949238,
+          "captured_photos4": 0.016317016317016316,
+          "captured_photos5": 0.36868736170766625,
+          "captured_photos6": 1.0,
+          "captured_photos7": 0.40404040404040403,
+          "captured_photos8": 0.61,
+          "captured_photos9": 0.03618576143328618
+        },
+        "HOTA": {
+          "capture_photos11": 0.0444974673486596,
+          "captured_photos1": 0.14036988577715148,
+          "captured_photos10": 0.5159040966127753,
+          "captured_photos2": 0.09394501453509983,
+          "captured_photos3": 0.009945780759563478,
+          "captured_photos4": 0.009586885740803719,
+          "captured_photos5": 0.39554700523879477,
+          "captured_photos6": 0.6246114141850623,
+          "captured_photos7": 0.3220128860977237,
+          "captured_photos8": 0.44243380885890427,
+          "captured_photos9": 0.15297324267053458
+        },
+        "AssA": {
+          "capture_photos11": 0.0444974673486596,
+          "captured_photos1": 0.14036988577715148,
+          "captured_photos10": 0.5159040966127753,
+          "captured_photos2": 0.09394501453509985,
+          "captured_photos3": 0.009945780759563478,
+          "captured_photos4": 0.009586885740803719,
+          "captured_photos5": 0.39554700523879477,
+          "captured_photos6": 0.6246114141850623,
+          "captured_photos7": 0.3220128860977237,
+          "captured_photos8": 0.44243380885890427,
+          "captured_photos9": 0.1529732426705346
+        }
+      },
+      "bbox_iou": {
+        "mean": 0.2980947530641764,
+        "sample_sd": 0.22192129079868383
+      },
+      "success_05": {
+        "mean": 0.34713718133092925,
+        "sample_sd": 0.2972372900954391
+      },
+      "precision_20": {
+        "mean": 0.3108013807480059,
+        "sample_sd": 0.3137000038408093
+      },
+      "HOTA": {
+        "mean": 0.2501661352568248,
+        "sample_sd": 0.2186048605573472
+      },
+      "AssA": {
+        "mean": 0.2501661352568248,
+        "sample_sd": 0.2186048605573472
+      },
+      "pooled_official_trackeval": {
+        "HOTA": 0.1367259318296925,
+        "DetA": 0.08352832438048717,
+        "AssA": 0.3015259243597688,
+        "LocA": 0.7199169587371473,
+        "MOTA": -0.6847882906429692,
+        "MOTP": 0.7020893684406325
+      },
+      "provenance": "public segmentation checkpoint with tracking wrapper",
+      "source_sha256": {
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\capture_photos11\\boards\\a\\sam_rows.csv": "3dd7ddd369cb16a723c52c9a6804e38fd684b8f42554db436c1202305f833628",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\capture_photos11\\boards\\unknown_from_threshold\\sam_rows.csv": "20b785b2322bce9ac4b1977ecf32669315e99d4b58476af8b8102b81431e6160",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos1\\boards\\a\\sam_rows.csv": "dd2186986a56dcdc861606bac3d735b1e53d0817f1c9c5bf3bf456b4d712d780",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos1\\boards\\b\\sam_rows.csv": "7083620ad9b3a08e4b4127b7289b6d1daa70c59638107410c18d9de969f05758",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos10\\boards\\a\\sam_rows.csv": "db472c8e9f9f888e0feedeca721ce254a8847881b12db12f8f8dd06d8e377f93",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos10\\boards\\b\\sam_rows.csv": "dc9b103fef10a721e3cd0306259cdfb4e486f96d3acb18381a78ecb13a93ea0b",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos2\\boards\\b\\sam_rows.csv": "48e99ae003957a9f509dc88941eef9e9876ad06bb9f8e57aa32453ebf6c72910",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos2\\boards\\c\\sam_rows.csv": "6fa1fc0da4bb310adcf5fe905c4410dd644061f85396d8826b8bde79dde805dc",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos3\\boards\\a\\sam_rows.csv": "bdd7e3b59b3ef59c951d753dff41882d12fc91bbda4e79bb0f15c700cb26a19a",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos3\\boards\\unknown_from_threshold\\sam_rows.csv": "1debee23a7d2010da19c238437b2076085c2f91d3b3d5abf12a0343c74044c42",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos4\\sam_rows.csv": "510040bbc027e4e87391459df3752c57861a72ef75fac832df973548b4998734",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos5\\boards\\b\\sam_rows.csv": "a2f610b2eae30c0d4b315b986ca127e4d06d4c8cc50f840e250a3032f24ffafa",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos5\\boards\\c\\sam_rows.csv": "8b6e45073a4a4d8c324a0bbbaf2b729a179b2b03aad8fff10258d279dcd95848",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos5\\boards\\unknown_from_threshold\\sam_rows.csv": "76052c35b5e12d28a4429b96d6863aa36a13abf1a85ac28e2fe44caab35c4cca",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos6\\boards\\a\\sam_rows.csv": "7ca6b6b1c43da0bb45c105267059c977cee2499c7c3ed6e3968fedaa44257408",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos6\\boards\\b\\sam_rows.csv": "09bc4601618b20906eb65ad7e288507f053012bce4483bf878a9b286ab7a40ea",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos7\\sam_rows.csv": "96a18bf4f7aaa31762ce3549d411701b16bdd8b6d486db20319884e275bfdf20",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos8\\boards\\a\\sam_rows.csv": "56b1b09d2b9c66ce4d14948a8c1125fba9a5e2eda58f79d924921ea22821d4bc",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos8\\boards\\b\\sam_rows.csv": "30156d354233f3ce1d325209df11624ac6130cfc5e230f2a74ae3690069164b8",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos8\\boards\\unknown_from_threshold\\sam_rows.csv": "2c34dc58deae06136016896155df864b48da532206ac97217364dfa52e2541f2",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos9\\boards\\b\\sam_rows.csv": "e4b744b6b8f7b96a206bd38018dbed77531721cde4d9827ab25fb8ada84ec1e3",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos9\\boards\\c\\sam_rows.csv": "d334f17feb4c96af424ac0b635ada7d8fc8a72fdd5a107872ee4b947eebfd4a1"
+      },
+      "missing_prediction_files": [],
+      "predictions_outside_fixed_protocol_not_scored": 0,
+      "source_gt_coordinate_mismatches": 0,
+      "shared_gt_protocol_verified": true
+    },
+    "YOLO": {
+      "n_sequences": 11,
+      "n_units": 19,
+      "n_gt_frames": 3826,
+      "n_missing_predictions": 0,
+      "aggregation": "equal-unit mean within sequence, equal-sequence macro mean",
+      "center_error": "valid predictions only; absent predictions are misses for overlap/precision",
+      "sequence_metrics": {
+        "bbox_iou": {
+          "capture_photos11": 0.07676939130322863,
+          "captured_photos1": 0.03919802661457399,
+          "captured_photos10": 0.22161516607600334,
+          "captured_photos2": 0.08843577991326866,
+          "captured_photos3": 0.03361289773249014,
+          "captured_photos4": 0.031373250798159454,
+          "captured_photos5": 0.09300726446103487,
+          "captured_photos6": 0.10096589828408863,
+          "captured_photos7": 0.028653843461950802,
+          "captured_photos8": 0.06586973535838597,
+          "captured_photos9": 0.07417447126944299
+        },
+        "success_05": {
+          "capture_photos11": 0.0,
+          "captured_photos1": 0.0,
+          "captured_photos10": 0.009615384615384616,
+          "captured_photos2": 0.04219899341850561,
+          "captured_photos3": 0.0,
+          "captured_photos4": 0.027972027972027972,
+          "captured_photos5": 0.04153650917610308,
+          "captured_photos6": 0.0,
+          "captured_photos7": 0.0,
+          "captured_photos8": 0.0,
+          "captured_photos9": 0.007425742574257425
+        },
+        "precision_20": {
+          "capture_photos11": 0.14689265536723164,
+          "captured_photos1": 0.01775285496410371,
+          "captured_photos10": 0.5326923076923077,
+          "captured_photos2": 0.011420828493999224,
+          "captured_photos3": 0.027918781725888325,
+          "captured_photos4": 0.016317016317016316,
+          "captured_photos5": 0.004230118443316413,
+          "captured_photos6": 0.2727272727272727,
+          "captured_photos7": 0.0,
+          "captured_photos8": 0.115,
+          "captured_photos9": 0.0
+        },
+        "HOTA": {
+          "capture_photos11": 0.04118943693337298,
+          "captured_photos1": 0.018118465411622972,
+          "captured_photos10": 0.2053192910348646,
+          "captured_photos2": 0.048678740248341304,
+          "captured_photos3": 0.015752286827397096,
+          "captured_photos4": 0.01613700893296302,
+          "captured_photos5": 0.06270899470803887,
+          "captured_photos6": 0.06720509624120519,
+          "captured_photos7": 0.015512465373961221,
+          "captured_photos8": 0.022785124480039734,
+          "captured_photos9": 0.040932771670324955
+        },
+        "AssA": {
+          "capture_photos11": 0.04118943693337298,
+          "captured_photos1": 0.018118465411622972,
+          "captured_photos10": 0.2053192910348646,
+          "captured_photos2": 0.048678740248341304,
+          "captured_photos3": 0.015752286827397096,
+          "captured_photos4": 0.01613700893296302,
+          "captured_photos5": 0.06270899470803887,
+          "captured_photos6": 0.06720509624120519,
+          "captured_photos7": 0.015512465373961221,
+          "captured_photos8": 0.022785124480039734,
+          "captured_photos9": 0.040932771670324955
+        }
+      },
+      "bbox_iou": {
+        "mean": 0.0776068841156934,
+        "sample_sd": 0.054528313048890914
+      },
+      "success_05": {
+        "mean": 0.011704423432388976,
+        "sample_sd": 0.017114728909010474
+      },
+      "precision_20": {
+        "mean": 0.10408653052101235,
+        "sample_sd": 0.16591529298084268
+      },
+      "HOTA": {
+        "mean": 0.05039451653292109,
+        "sample_sd": 0.05477916585379135
+      },
+      "AssA": {
+        "mean": 0.05039451653292109,
+        "sample_sd": 0.05477916585379135
+      },
+      "pooled_official_trackeval": {
+        "HOTA": 0.03871757419534547,
+        "DetA": 0.0288140135508709,
+        "AssA": 0.0529534502639317,
+        "LocA": 0.632789960450745,
+        "MOTA": -0.9717720857292211,
+        "MOTP": 0.5723898246478794
+      },
+      "provenance": "public segmentation checkpoint with tracking wrapper",
+      "source_sha256": {
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\capture_photos11\\boards\\a\\yolo_rows.csv": "48d32b2926070d66c5df4a0b8243a2c12dd5a5f22c8397caaa0994efe46bc36c",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\capture_photos11\\boards\\unknown_from_threshold\\yolo_rows.csv": "399b315881f8cbd202e1c0a4210b3ba84b7f73185f1d6bedb9529c7d21b8478b",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos1\\boards\\a\\yolo_rows.csv": "f428c3f8a1479facb2cf4e5dc0069ae771d1bfc027c64fc88239bd863096e85c",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos1\\boards\\b\\yolo_rows.csv": "da9482607bb54f6831c2d2624706138197f9eaec0433677e4a0850369b8872df",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos10\\boards\\a\\yolo_rows.csv": "c865e4076f6ca57dffdbf5ccf4c1d1436cbd84d4120ab151222aa80f9f90f8b1",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos10\\boards\\b\\yolo_rows.csv": "58ff02128d24c351cc9d6ebfbbce785ee0aed5ed8eaef4e7e8010c929bd0dcff",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos2\\boards\\b\\yolo_rows.csv": "a4e58d3db8964a993a87b2251bd2246c9e0b4c480a9e9218fb09a5a7bcae069d",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos2\\boards\\c\\yolo_rows.csv": "7b79410f0bc1e01d153d6d1f7617e0ea26a38a3392698a58cabd12207232404a",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos3\\boards\\a\\yolo_rows.csv": "f4b9e372e73d416b38f4acf980ce18adadb69e93dc43e14b0c49db787f05ee07",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos3\\boards\\unknown_from_threshold\\yolo_rows.csv": "f2e4c698d5786b5a827ec241020b12e5b03724ab3168bdf01b248954a36ca2bb",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos4\\yolo_rows.csv": "60087d1fdd94f02acc94ef935bcc3a297d3dcaad22c282acfb7a1c7387a958c2",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos5\\boards\\b\\yolo_rows.csv": "972bf8e872fdeb62e73a2218b7c97cd89ca58965cc5c3ae51a5c19f6c1cf30b1",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos5\\boards\\c\\yolo_rows.csv": "7d0eb758e01d11c13fcfc54d9a53b656ad0c08b9922bc52f5e9c091d0c91efc0",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos5\\boards\\unknown_from_threshold\\yolo_rows.csv": "19151a80ff598cb31498afcd41141895d8f4d13e00a6c18944caa5f64badeaa7",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos6\\boards\\a\\yolo_rows.csv": "2d88e8572e13e6a5b20f3f39ddd24dec47ddb2584fdc4c7b015f1a12101585a1",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos6\\boards\\b\\yolo_rows.csv": "026604ae044f3b809b6dc554f99ddac9cb59e3fbac41a8015bddaccd9361bf4f",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos7\\yolo_rows.csv": "6f35da9b23fa3c307243fc6fded7cd62db3c34252a4d8be1bbc365febf20e2e3",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos8\\boards\\a\\yolo_rows.csv": "1c2484f0642bbd73c3a2685f03fd555563f73adb91cd1dd352758840d38696e2",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos8\\boards\\b\\yolo_rows.csv": "a07a3acca666ce11efef53329a655405f73ea15c1fcc05b6878b5cb2ffb3660e",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos8\\boards\\unknown_from_threshold\\yolo_rows.csv": "003cc8bcf4ebadb8e909beccc8e293443eca959fbbc483b0529d03fa91c85343",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos9\\boards\\b\\yolo_rows.csv": "3f08e98000a391f1ea2736181e2d25faddf9907c5c7157f5529efe78f0e67e8c",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos9\\boards\\c\\yolo_rows.csv": "72679b6c976eda7139765362cfa2522efe5464b9e87f552ab86b3d522062cf0d"
+      },
+      "missing_prediction_files": [],
+      "predictions_outside_fixed_protocol_not_scored": 0,
+      "source_gt_coordinate_mismatches": 0,
+      "shared_gt_protocol_verified": true
+    },
+    "Cutie": {
+      "n_sequences": 11,
+      "n_units": 19,
+      "n_gt_frames": 3826,
+      "n_missing_predictions": 0,
+      "aggregation": "equal-unit mean within sequence, equal-sequence macro mean",
+      "center_error": "valid predictions only; absent predictions are misses for overlap/precision",
+      "sequence_metrics": {
+        "bbox_iou": {
+          "capture_photos11": 0.05320532564191417,
+          "captured_photos1": 0.11664359839929112,
+          "captured_photos10": 0.4464147264945419,
+          "captured_photos2": 0.3143112982869279,
+          "captured_photos3": 0.1566244207753539,
+          "captured_photos4": 0.23807681803266353,
+          "captured_photos5": 0.5924974099690096,
+          "captured_photos6": 0.5380649750364883,
+          "captured_photos7": 0.30805209248244303,
+          "captured_photos8": 0.21359704646404076,
+          "captured_photos9": 0.17888405495673665
+        },
+        "success_05": {
+          "capture_photos11": 0.014124293785310734,
+          "captured_photos1": 0.03614737938474129,
+          "captured_photos10": 0.5153846153846153,
+          "captured_photos2": 0.19879984514130855,
+          "captured_photos3": 0.04060913705583756,
+          "captured_photos4": 0.11888111888111888,
+          "captured_photos5": 0.5735715215410647,
+          "captured_photos6": 0.5757575757575758,
+          "captured_photos7": 0.1717171717171717,
+          "captured_photos8": 0.03,
+          "captured_photos9": 0.08816595945308817
+        },
+        "precision_20": {
+          "capture_photos11": 0.0,
+          "captured_photos1": 0.003129301045270245,
+          "captured_photos10": 0.2519230769230769,
+          "captured_photos2": 0.008710801393728223,
+          "captured_photos3": 0.0012690355329949238,
+          "captured_photos4": 0.023310023310023312,
+          "captured_photos5": 0.34584472211375766,
+          "captured_photos6": 0.408008658008658,
+          "captured_photos7": 0.0707070707070707,
+          "captured_photos8": 0.01,
+          "captured_photos9": 0.0049504950495049506
+        },
+        "HOTA": {
+          "capture_photos11": 0.026575223540721702,
+          "captured_photos1": 0.06489302626446321,
+          "captured_photos10": 0.41637786570712804,
+          "captured_photos2": 0.23242364285516673,
+          "captured_photos3": 0.09420559166701489,
+          "captured_photos4": 0.1522739419393097,
+          "captured_photos5": 0.5362310304432557,
+          "captured_photos6": 0.49205136917272857,
+          "captured_photos7": 0.21449120845694522,
+          "captured_photos8": 0.1819562549862458,
+          "captured_photos9": 0.10744091768259274
+        },
+        "AssA": {
+          "capture_photos11": 0.026575223540721702,
+          "captured_photos1": 0.06489302626446321,
+          "captured_photos10": 0.41637786570712804,
+          "captured_photos2": 0.23242364285516673,
+          "captured_photos3": 0.09420559166701489,
+          "captured_photos4": 0.1522739419393097,
+          "captured_photos5": 0.5362310304432557,
+          "captured_photos6": 0.49205136917272857,
+          "captured_photos7": 0.21449120845694522,
+          "captured_photos8": 0.1819562549862458,
+          "captured_photos9": 0.10744091768259274
+        }
+      },
+      "bbox_iou": {
+        "mean": 0.28694288786721917,
+        "sample_sd": 0.17410168862487976
+      },
+      "success_05": {
+        "mean": 0.21483260164562115,
+        "sample_sd": 0.2265807178820462
+      },
+      "precision_20": {
+        "mean": 0.10253210764400772,
+        "sample_sd": 0.15480902586938308
+      },
+      "HOTA": {
+        "mean": 0.22899273388323385,
+        "sample_sd": 0.1754630026885654
+      },
+      "AssA": {
+        "mean": 0.22899273388323385,
+        "sample_sd": 0.1754630026885654
+      },
+      "pooled_official_trackeval": {
+        "HOTA": 0.1677087468714392,
+        "DetA": 0.12385259924852714,
+        "AssA": 0.24886323068131055,
+        "LocA": 0.6448385288552175,
+        "MOTA": -0.7673810768426556,
+        "MOTP": 0.6333642905425212
+      },
+      "provenance": "public checkpoint with tracking wrapper",
+      "source_sha256": {
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\capture_photos11\\boards\\a\\cutie_rows.csv": "2d69386840c5facc409a6a894b363c68d180e4c33ce629568bc011db921e5048",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\capture_photos11\\boards\\unknown_from_threshold\\cutie_rows.csv": "f1f390ca95fde904e7f76d9c4c5ee273c4bdb9a28ada803682ae1aab0542d963",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos1\\boards\\a\\cutie_rows.csv": "f9ef1483a7349df77853918ca92d65cae11f0b67621508240f76f0db9e211a6d",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos1\\boards\\b\\cutie_rows.csv": "90c41fb81b06070ec1973d00b3629b420b361e02dbe43707531c36650b5b99f6",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos10\\boards\\a\\cutie_rows.csv": "a89f45bc9f1420c7e394c8b9946326282da2da9ff2bf757848da1dd22ec9c20a",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos10\\boards\\b\\cutie_rows.csv": "0c55faaeb58fd418444b21f606c9fdc7371ddd0680b86776922e72011f2480b6",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos2\\boards\\b\\cutie_rows.csv": "41ada6becd5a4b9dbab4fed60c4eaceaad349e01158cd4d315d3f6d6ac704809",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos2\\boards\\c\\cutie_rows.csv": "fd1dda28d7e14038d7684042c2fa02f86da8f36a6ec16ec50e999bf08e80061f",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos3\\boards\\a\\cutie_rows.csv": "d1739f44f7cd412f1fd506aef35ddc17c28ddcbd3c478d3a40042d021e572eb3",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos3\\boards\\unknown_from_threshold\\cutie_rows.csv": "c34df2e9c408cecfd0e1cb8dd9f82b70d017e621803f6a7460f76892b1b273ef",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos4\\cutie_rows.csv": "65ac699cddf2eb953662eb62f948e1d83019268db42c03df596ad5004226bed4",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos5\\boards\\b\\cutie_rows.csv": "5933e57315173f93787b89f364d0cd7a931fc3a7aed777b57ce2dbf07907da7f",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos5\\boards\\c\\cutie_rows.csv": "804ed03fedec8cff5440a8f9d6239847d654bca0d397653998290552bb47673b",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos5\\boards\\unknown_from_threshold\\cutie_rows.csv": "28b0e55a849c7357f4fd2d2f03a4f8cd21c1a8cd2cd0ab89d043899ada9c6b86",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos6\\boards\\a\\cutie_rows.csv": "a48ed0404ea717b39c94409e727e17443c991e5bc79a2e0f8185a253f6170731",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos6\\boards\\b\\cutie_rows.csv": "f478272445248ce0d2e3ff449ceec08074834cebc5304d4a0e73f3f4e04bfb99",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos7\\cutie_rows.csv": "1d6a443d9067062ada631262b9bea7a1e95d16f926c3c31fe2f6b3d667d3959e",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos8\\boards\\a\\cutie_rows.csv": "6ace5e07d0908dac9ebf558627571cdb89251730632eeef9a6448ed717f6cc72",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos8\\boards\\b\\cutie_rows.csv": "00eebaa15648630d028b8a36000ed2c0e9e1838ae22ac541805b69eb9910124f",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos8\\boards\\unknown_from_threshold\\cutie_rows.csv": "fa06d475b350909f955a20eb8b57e3ac50664228a89718c8b8080aaed21a559d",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos9\\boards\\b\\cutie_rows.csv": "9be555fb3aedb5586f37da014250c80c05d223a82db44e5ff923d4a5b9911795",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos9\\boards\\c\\cutie_rows.csv": "07d705e74722714c5ad4d6cd7926675f6659c6f19c26a818826c98e6fec368eb"
+      },
+      "missing_prediction_files": [],
+      "predictions_outside_fixed_protocol_not_scored": 0,
+      "source_gt_coordinate_mismatches": 0,
+      "shared_gt_protocol_verified": true
+    },
+    "OSTrack-proxy": {
+      "n_sequences": 11,
+      "n_units": 19,
+      "n_gt_frames": 3826,
+      "n_missing_predictions": 0,
+      "aggregation": "equal-unit mean within sequence, equal-sequence macro mean",
+      "center_error": "valid predictions only; absent predictions are misses for overlap/precision",
+      "sequence_metrics": {
+        "bbox_iou": {
+          "capture_photos11": 0.1043484881148121,
+          "captured_photos1": 0.13426703510625201,
+          "captured_photos10": 0.23167346916694237,
+          "captured_photos2": 0.27233124429778605,
+          "captured_photos3": 0.0837743297820013,
+          "captured_photos4": 0.16020402589504432,
+          "captured_photos5": 0.3181746802440166,
+          "captured_photos6": 0.07745428427599434,
+          "captured_photos7": 0.1781425352676304,
+          "captured_photos8": 0.08831325208099439,
+          "captured_photos9": 0.25058089283811535
+        },
+        "success_05": {
+          "capture_photos11": 0.002824858757062147,
+          "captured_photos1": 0.0,
+          "captured_photos10": 0.011538461538461539,
+          "captured_photos2": 0.07104142469996128,
+          "captured_photos3": 0.0,
+          "captured_photos4": 0.0,
+          "captured_photos5": 0.0008460236886632825,
+          "captured_photos6": 0.0,
+          "captured_photos7": 0.020202020202020204,
+          "captured_photos8": 0.0,
+          "captured_photos9": 0.026284771334276282
+        },
+        "precision_20": {
+          "capture_photos11": 0.0,
+          "captured_photos1": 0.007281553398058253,
+          "captured_photos10": 0.0019230769230769232,
+          "captured_photos2": 0.006968641114982578,
+          "captured_photos3": 0.0025380710659898475,
+          "captured_photos4": 0.002331002331002331,
+          "captured_photos5": 0.0,
+          "captured_photos6": 0.0,
+          "captured_photos7": 0.0,
+          "captured_photos8": 0.0,
+          "captured_photos9": 0.0
+        },
+        "HOTA": {
+          "capture_photos11": 0.057739039058445386,
+          "captured_photos1": 0.09424865001297654,
+          "captured_photos10": 0.1898150997312938,
+          "captured_photos2": 0.2036635421874934,
+          "captured_photos3": 0.04330331080684441,
+          "captured_photos4": 0.10872165858969562,
+          "captured_photos5": 0.28257938784830944,
+          "captured_photos6": 0.05270681622441284,
+          "captured_photos7": 0.11834854881625509,
+          "captured_photos8": 0.05791969835044061,
+          "captured_photos9": 0.2082808487901841
+        },
+        "AssA": {
+          "capture_photos11": 0.057739039058445386,
+          "captured_photos1": 0.09424865001297654,
+          "captured_photos10": 0.1898150997312938,
+          "captured_photos2": 0.2036635421874934,
+          "captured_photos3": 0.04330331080684441,
+          "captured_photos4": 0.10872165858969562,
+          "captured_photos5": 0.28257938784830944,
+          "captured_photos6": 0.05270681622441284,
+          "captured_photos7": 0.11834854881625509,
+          "captured_photos8": 0.05791969835044061,
+          "captured_photos9": 0.2082808487901841
+        }
+      },
+      "bbox_iou": {
+        "mean": 0.1726603851881445,
+        "sample_sd": 0.08430183310162012
+      },
+      "success_05": {
+        "mean": 0.012067050929131339,
+        "sample_sd": 0.021647114417638287
+      },
+      "precision_20": {
+        "mean": 0.0019129404393736303,
+        "sample_sd": 0.002773153943850263
+      },
+      "HOTA": {
+        "mean": 0.12884787276512283,
+        "sample_sd": 0.08010766181158699
+      },
+      "AssA": {
+        "mean": 0.12884787276512283,
+        "sample_sd": 0.08010766181158699
+      },
+      "pooled_official_trackeval": {
+        "HOTA": 0.13835388491410114,
+        "DetA": 0.11024296240243868,
+        "AssA": 0.17935961908819623,
+        "LocA": 0.6242280081482855,
+        "MOTA": -0.98170412963931,
+        "MOTP": 0.5518647916842307
+      },
+      "provenance": "untrained task head; appendix only",
+      "source_sha256": {
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\capture_photos11\\boards\\a\\ostrack_rows.csv": "2665d611be3401145fbe6536ab6a4ac582ba283db2abaf6e912ce548b2837864",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\capture_photos11\\boards\\unknown_from_threshold\\ostrack_rows.csv": "f536b63403b35617283a0121dcf9f5ee93282f3d5357383e37f50d8f99c1673c",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos1\\boards\\a\\ostrack_rows.csv": "65f2649fa5d9612e5eb0795fb99cedcbb54b36c02622367402785783bb1a114b",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos1\\boards\\b\\ostrack_rows.csv": "28963d95c1be62d8ecfe98b1d16b720318b9507c62f31c42dda857332ae6d3c2",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos10\\boards\\a\\ostrack_rows.csv": "c53e0455b1fc399c302e81777115eb7bc0229b3826f9b1c8e16678c92efca018",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos10\\boards\\b\\ostrack_rows.csv": "a2e0b0b6e8589ece3efe7fcd74d5c3a989796127d067097452af43167e04be1e",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos2\\boards\\b\\ostrack_rows.csv": "78e3a0b6f90c6d248a3f580377688f301c21d2ecdd28b2119d127d8c5a638062",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos2\\boards\\c\\ostrack_rows.csv": "862c862c41718ee2176e23718cb62070f5dc45a69f6954967bf8fd27d12eadd2",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos3\\boards\\a\\ostrack_rows.csv": "2af1a8baa8d6d6d5a2a3d35d64557f3d0a8847e0c7aa72a1986ea5705893b122",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos3\\boards\\unknown_from_threshold\\ostrack_rows.csv": "ab2c972eaa4af5e399bbb3debded22b7b3a9577a2ec87cbc4ea871381d385943",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos4\\ostrack_rows.csv": "268fa97cdb70e880a1b8fd925cfa748a7c4fb4e8c9829f68e051d37fe6dfa218",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos5\\boards\\b\\ostrack_rows.csv": "7f65bf40aba334df4bd8d12804180364412126a6b987bc0ab5ae4579d12656fc",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos5\\boards\\c\\ostrack_rows.csv": "2d433c169a885ac4de7e9553121e8aa74e183b6643ebdcb08bfb0c4ea26c45b7",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos5\\boards\\unknown_from_threshold\\ostrack_rows.csv": "04471136997042ed2e7ab43d4e9a88d0b1ead26b658425aee5754af07aa819f2",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos6\\boards\\a\\ostrack_rows.csv": "6f10f988cdf85467f1ff840293ce3a822bcc9a5c33d952be52f67775a6d14f09",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos6\\boards\\b\\ostrack_rows.csv": "69272fb465f2165effe7e44e9f5eb0ba7472d43803ab196c7925d626543c50f5",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos7\\ostrack_rows.csv": "430cebcbc5aedca4058c5eba3b8ea93baaacb6517d501df2548e2975762e084b",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos8\\boards\\a\\ostrack_rows.csv": "7a4e80fa77e8cd1405625f46ca40c7d66e594e3c7dd3e377d29461f3c962952e",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos8\\boards\\b\\ostrack_rows.csv": "2d431611597376872c737eece6f2c065f2da4331013f2ab506ee82685996eb4f",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos8\\boards\\unknown_from_threshold\\ostrack_rows.csv": "1ca63374334dd49e0d23540a887fb4757e4433617ad28253be14fabb8ce5680f",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos9\\boards\\b\\ostrack_rows.csv": "bb53e7d9045bb559cff3e6e849260b2361acdb972f1d1440491da46a69de08d4",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos9\\boards\\c\\ostrack_rows.csv": "357ac66a789fe9ed9c0309de5d75192651f476db258e6127727f5f2e9236c2c2"
+      },
+      "missing_prediction_files": [],
+      "predictions_outside_fixed_protocol_not_scored": 0,
+      "source_gt_coordinate_mismatches": 0,
+      "shared_gt_protocol_verified": true
+    },
+    "MixFormer-proxy": {
+      "n_sequences": 11,
+      "n_units": 19,
+      "n_gt_frames": 3826,
+      "n_missing_predictions": 0,
+      "aggregation": "equal-unit mean within sequence, equal-sequence macro mean",
+      "center_error": "valid predictions only; absent predictions are misses for overlap/precision",
+      "sequence_metrics": {
+        "bbox_iou": {
+          "capture_photos11": 0.11202204417869406,
+          "captured_photos1": 0.1525369638541873,
+          "captured_photos10": 0.26143643234890673,
+          "captured_photos2": 0.27698276878824135,
+          "captured_photos3": 0.0833336429340078,
+          "captured_photos4": 0.15371398250588714,
+          "captured_photos5": 0.3377765815611477,
+          "captured_photos6": 0.07573277454691557,
+          "captured_photos7": 0.18597393891314035,
+          "captured_photos8": 0.08150580630060827,
+          "captured_photos9": 0.2592603366970274
+        },
+        "success_05": {
+          "capture_photos11": 0.0,
+          "captured_photos1": 0.0,
+          "captured_photos10": 0.013461538461538462,
+          "captured_photos2": 0.07801006581494385,
+          "captured_photos3": 0.0,
+          "captured_photos4": 0.0,
+          "captured_photos5": 0.007435246648444618,
+          "captured_photos6": 0.0,
+          "captured_photos7": 0.020202020202020204,
+          "captured_photos8": 0.0,
+          "captured_photos9": 0.023809523809523808
+        },
+        "precision_20": {
+          "capture_photos11": 0.00847457627118644,
+          "captured_photos1": 0.011112971022579325,
+          "captured_photos10": 0.0,
+          "captured_photos2": 0.0156794425087108,
+          "captured_photos3": 0.0012690355329949238,
+          "captured_photos4": 0.0,
+          "captured_photos5": 0.017766497461928935,
+          "captured_photos6": 0.0,
+          "captured_photos7": 0.0,
+          "captured_photos8": 0.0,
+          "captured_photos9": 0.0
+        },
+        "HOTA": {
+          "capture_photos11": 0.06705824706906187,
+          "captured_photos1": 0.11274307955873017,
+          "captured_photos10": 0.21442910236806056,
+          "captured_photos2": 0.21158071607782883,
+          "captured_photos3": 0.04242011419800705,
+          "captured_photos4": 0.10149494487373821,
+          "captured_photos5": 0.2991503210621689,
+          "captured_photos6": 0.050498967173799196,
+          "captured_photos7": 0.12368331179226436,
+          "captured_photos8": 0.0407407390166028,
+          "captured_photos9": 0.21496944555636535
+        },
+        "AssA": {
+          "capture_photos11": 0.06705824706906187,
+          "captured_photos1": 0.11274307955873017,
+          "captured_photos10": 0.21442910236806056,
+          "captured_photos2": 0.21158071607782883,
+          "captured_photos3": 0.04242011419800705,
+          "captured_photos4": 0.10149494487373821,
+          "captured_photos5": 0.2991503210621689,
+          "captured_photos6": 0.050498967173799196,
+          "captured_photos7": 0.12368331179226436,
+          "captured_photos8": 0.0407407390166028,
+          "captured_photos9": 0.21496944555636535
+        }
+      },
+      "bbox_iou": {
+        "mean": 0.18002502478443305,
+        "sample_sd": 0.09123168435789011
+      },
+      "success_05": {
+        "mean": 0.012992581357860996,
+        "sample_sd": 0.02332424157279002
+      },
+      "precision_20": {
+        "mean": 0.0049365929815818575,
+        "sample_sd": 0.007002506091633956
+      },
+      "HOTA": {
+        "mean": 0.13443354443151156,
+        "sample_sd": 0.08744648389110692
+      },
+      "AssA": {
+        "mean": 0.13443354443151156,
+        "sample_sd": 0.08744648389110692
+      },
+      "pooled_official_trackeval": {
+        "HOTA": 0.1501102478450144,
+        "DetA": 0.11731990569607702,
+        "AssA": 0.20055719428583577,
+        "LocA": 0.6092011767324836,
+        "MOTA": -0.9775222164140094,
+        "MOTP": 0.5437523460084798
+      },
+      "provenance": "untrained task head; appendix only",
+      "source_sha256": {
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\capture_photos11\\boards\\a\\mixformer_rows.csv": "5f68971d1f7fb884952b5b15b899c5f5f9fd9b28b4bed51ea6603f42e41cc0f0",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\capture_photos11\\boards\\unknown_from_threshold\\mixformer_rows.csv": "ba9ba5c788d61967c1b25721b32a37c5f2533de02de21f7a3dff704443781ea6",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos1\\boards\\a\\mixformer_rows.csv": "54175ad345dc73df55bc8a51ffd00f21aae6b7d00f9f9e5a9d4afa94475ca512",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos1\\boards\\b\\mixformer_rows.csv": "334725ce9fff2752f274df210d1f54f68e64293a9f1ef8765cd9eb6f30176580",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos10\\boards\\a\\mixformer_rows.csv": "e5fda129a14bc6334761d65a2ff4db8367a86ae9086604c191d5f7387a8ca68e",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos10\\boards\\b\\mixformer_rows.csv": "555867299c13ec720bc2f56b7ed8af33d208883f72d07f10e49612912c62db04",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos2\\boards\\b\\mixformer_rows.csv": "12cf1a3b6603a7a212e4657473bb3450579b5f3fca69f81965279dae12309c78",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos2\\boards\\c\\mixformer_rows.csv": "29f4147908d00ec276aef9efc12b611f1206b941de574a33cc50ae3c3e802da9",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos3\\boards\\a\\mixformer_rows.csv": "b98a82e16d214deb5bf608ed454138a334992f5a8ea223b7d569af6be4139a00",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos3\\boards\\unknown_from_threshold\\mixformer_rows.csv": "019f928c5bf2e5ed55d6b5cec411857f12591aa7b875692d18d1f2761f5940d0",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos4\\mixformer_rows.csv": "78b5f822246bbfc8ed894eea7615a3e723c89cf483f1665d4e1954d14270e169",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos5\\boards\\b\\mixformer_rows.csv": "c8ee81bd3dbcf44141e111a450ced830df785570d36d89dc068f7b896ff7030b",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos5\\boards\\c\\mixformer_rows.csv": "9441aa0002496aa58e5aefbce7720a653be0b264bfb12061622b349950f7134a",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos5\\boards\\unknown_from_threshold\\mixformer_rows.csv": "603cc8fe17a56e0c28c54f8cb365a37cc2d54bcace2ed2b6df914f10f5abc8c5",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos6\\boards\\a\\mixformer_rows.csv": "750cc3bb5ee3c6727daf43b1bf3c62df311e04c983dad89c1aa6e026b5feda0c",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos6\\boards\\b\\mixformer_rows.csv": "af3bd41d45aad7851feba6edcc47837bc4e3c8ecb6c84c5a85761aec9f4a208b",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos7\\mixformer_rows.csv": "923484514e4449571512ed8fc6587c762285e365ad6ab679c5d7b9fa09fefef0",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos8\\boards\\a\\mixformer_rows.csv": "9f754f20185d77797ed77e3a1178e678ccd723f2ed850ef018ec39ad69a6de19",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos8\\boards\\b\\mixformer_rows.csv": "33889412d75e4f8638fc35be042c981bdbce92d70baf98fe6d16440480b4760c",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos8\\boards\\unknown_from_threshold\\mixformer_rows.csv": "bd0e876b0b0a126844046ffc1a02cc629b6712d6b8341ece9ea88eeafb81e51f",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos9\\boards\\b\\mixformer_rows.csv": "21269f46e4b917ce5c598c441694822e01299624a75b999c773858b90eabe6d7",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos9\\boards\\c\\mixformer_rows.csv": "d05e6eae2ea7984711ddb131a7631d10ba00a6736e37e7bb35aed8a2b7425317"
+      },
+      "missing_prediction_files": [],
+      "predictions_outside_fixed_protocol_not_scored": 0,
+      "source_gt_coordinate_mismatches": 0,
+      "shared_gt_protocol_verified": true
+    },
+    "LMTrack-proxy": {
+      "n_sequences": 11,
+      "n_units": 19,
+      "n_gt_frames": 3826,
+      "n_missing_predictions": 0,
+      "aggregation": "equal-unit mean within sequence, equal-sequence macro mean",
+      "center_error": "valid predictions only; absent predictions are misses for overlap/precision",
+      "sequence_metrics": {
+        "bbox_iou": {
+          "capture_photos11": 0.11145013272913273,
+          "captured_photos1": 0.15186015773658315,
+          "captured_photos10": 0.2573359599485439,
+          "captured_photos2": 0.31917676228184,
+          "captured_photos3": 0.06680798429558378,
+          "captured_photos4": 0.13358149793949242,
+          "captured_photos5": 0.34338430643734236,
+          "captured_photos6": 0.05760117448408826,
+          "captured_photos7": 0.18393873538646943,
+          "captured_photos8": 0.09023616917789529,
+          "captured_photos9": 0.2775207269972829
+        },
+        "success_05": {
+          "capture_photos11": 0.0,
+          "captured_photos1": 0.0,
+          "captured_photos10": 0.025,
+          "captured_photos2": 0.1254355400696864,
+          "captured_photos3": 0.0,
+          "captured_photos4": 0.0,
+          "captured_photos5": 0.00338409475465313,
+          "captured_photos6": 0.0,
+          "captured_photos7": 0.010101010101010102,
+          "captured_photos8": 0.0,
+          "captured_photos9": 0.023809523809523808
+        },
+        "precision_20": {
+          "capture_photos11": 0.00847457627118644,
+          "captured_photos1": 0.007281553398058253,
+          "captured_photos10": 0.0038461538461538464,
+          "captured_photos2": 0.003484320557491289,
+          "captured_photos3": 0.006345177664974619,
+          "captured_photos4": 0.006993006993006993,
+          "captured_photos5": 0.00338409475465313,
+          "captured_photos6": 0.0,
+          "captured_photos7": 0.0,
+          "captured_photos8": 0.005,
+          "captured_photos9": 0.0
+        },
+        "HOTA": {
+          "capture_photos11": 0.0659430052633746,
+          "captured_photos1": 0.11255751829455217,
+          "captured_photos10": 0.20841886577976054,
+          "captured_photos2": 0.25758049379617054,
+          "captured_photos3": 0.027538583456065517,
+          "captured_photos4": 0.09077802337319103,
+          "captured_photos5": 0.32165696881819844,
+          "captured_photos6": 0.03357821366935834,
+          "captured_photos7": 0.12828555395050212,
+          "captured_photos8": 0.0596085870011384,
+          "captured_photos9": 0.23016307618644816
+        },
+        "AssA": {
+          "capture_photos11": 0.0659430052633746,
+          "captured_photos1": 0.11255751829455216,
+          "captured_photos10": 0.20841886577976054,
+          "captured_photos2": 0.25758049379617054,
+          "captured_photos3": 0.027538583456065517,
+          "captured_photos4": 0.09077802337319103,
+          "captured_photos5": 0.32165696881819844,
+          "captured_photos6": 0.03357821366935834,
+          "captured_photos7": 0.12828555395050212,
+          "captured_photos8": 0.0596085870011384,
+          "captured_photos9": 0.23016307618644816
+        }
+      },
+      "bbox_iou": {
+        "mean": 0.18117214612856855,
+        "sample_sd": 0.1024954675479394
+      },
+      "success_05": {
+        "mean": 0.017066378975897585,
+        "sample_sd": 0.03719620469099074
+      },
+      "precision_20": {
+        "mean": 0.004073534862320415,
+        "sample_sd": 0.0030798997826786637
+      },
+      "HOTA": {
+        "mean": 0.13964626268988728,
+        "sample_sd": 0.09943192521234158
+      },
+      "AssA": {
+        "mean": 0.13964626268988728,
+        "sample_sd": 0.09943192521234158
+      },
+      "pooled_official_trackeval": {
+        "HOTA": 0.15099259125797992,
+        "DetA": 0.1134315950972712,
+        "AssA": 0.2100400196478296,
+        "LocA": 0.6445119440346286,
+        "MOTA": -0.9691583899634083,
+        "MOTP": 0.5334352870895428
+      },
+      "provenance": "untrained task head; appendix only",
+      "source_sha256": {
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\capture_photos11\\boards\\a\\lmtrack_rows.csv": "f0f253402efdb28c7ea19745503e449854acb3458809a75d06b7f2254dfd8f66",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\capture_photos11\\boards\\unknown_from_threshold\\lmtrack_rows.csv": "3c8f58269623e747c393471078616a40756ab404c2f111bae47cee30fc838499",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos1\\boards\\a\\lmtrack_rows.csv": "fe60f09e6cf5d4901e91aa1613c39d5f59ed8cac32f74b9378362679f7a3d6c5",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos1\\boards\\b\\lmtrack_rows.csv": "47a5d71dc93731eb765d921ec631006377b1a47b0337b64b064134b39c375d72",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos10\\boards\\a\\lmtrack_rows.csv": "d5dd20de423fb0cd2479f2f99d8ded6e70e5440fcaf75391115d4d423ee959b0",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos10\\boards\\b\\lmtrack_rows.csv": "0f2dcdca0ebcb7a7f0aebbdf9361ed07303e7086a103b1c9c89d82de4e6c8937",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos2\\boards\\b\\lmtrack_rows.csv": "91dfe70e64d1b72b212d570ded57ef1b307f57bc45996e0de640f57dc4debae8",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos2\\boards\\c\\lmtrack_rows.csv": "a4908b396a2efacc0e6451ade7f8fd7f2a77f13974b962d19292ebf60deb1f31",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos3\\boards\\a\\lmtrack_rows.csv": "d9020451e047c6d4e8f4609bef2611ae5fc2cc8d8e8d6d6522e6642dbdf5a974",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos3\\boards\\unknown_from_threshold\\lmtrack_rows.csv": "46ae4d3630ec4d9270bc88ece43d70ecea5d1dcdf4f27febfbb5206b55caa5c3",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos4\\lmtrack_rows.csv": "c684091a73f4bb1ab7d02330aabb311af494f76aa777db9a395d038c7f32dac0",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos5\\boards\\b\\lmtrack_rows.csv": "41125314cfe7905d8115072faa0b0d0890d91e21dabfeaa1751715027f7a3fcc",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos5\\boards\\c\\lmtrack_rows.csv": "6ff8342cab7fca207757d800804105911afd0bdc7728576bb2847bb45000b72e",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos5\\boards\\unknown_from_threshold\\lmtrack_rows.csv": "2d99c93cea902a99304c02385cc9069046b7e5045cfeb5a7c29b40b5c9851c8b",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos6\\boards\\a\\lmtrack_rows.csv": "0334b8b91f200277cca13382bce7446da3e98a599c5c16f0ba0284f611ed2b31",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos6\\boards\\b\\lmtrack_rows.csv": "6b17036d896c52b23412ae53d72dc6d5b088626d1a31839ff7adbd321d3ef3e4",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos7\\lmtrack_rows.csv": "af2c152da8eab6d8fa213b9986fb38159269e93e6505ae46a5502d8f9b814add",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos8\\boards\\a\\lmtrack_rows.csv": "0742fd1d60e206f1b2b4c0389715a4c89978ffadb1c1687106caaf44782d67e3",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos8\\boards\\b\\lmtrack_rows.csv": "4234f144e8aac9bccb43b0b3d4528500d7a63fab406c742d6aadf3682e3222d0",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos8\\boards\\unknown_from_threshold\\lmtrack_rows.csv": "714362792cf00991a37b0a0d522248898f5944742d2adbd2dbccffe034d9de88",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos9\\boards\\b\\lmtrack_rows.csv": "0e274fa4669695cc914fe3ef6b7472dbbe2abe5c6348fed836b6faab33d8ea5c",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos9\\boards\\c\\lmtrack_rows.csv": "6b5785c1ca60e927f6e95d8913825baa08bca23f5827132db0e1898ec2f787fa"
+      },
+      "missing_prediction_files": [],
+      "predictions_outside_fixed_protocol_not_scored": 0,
+      "source_gt_coordinate_mismatches": 0,
+      "shared_gt_protocol_verified": true
+    },
+    "STARK-proxy": {
+      "n_sequences": 11,
+      "n_units": 19,
+      "n_gt_frames": 3826,
+      "n_missing_predictions": 528,
+      "aggregation": "equal-unit mean within sequence, equal-sequence macro mean",
+      "center_error": "valid predictions only; absent predictions are misses for overlap/precision",
+      "sequence_metrics": {
+        "bbox_iou": {
+          "capture_photos11": 0.0009290844564203255,
+          "captured_photos1": 0.0008252992318849988,
+          "captured_photos10": 0.07506994496080228,
+          "captured_photos2": 0.003319271626304959,
+          "captured_photos3": 0.00028291763569961213,
+          "captured_photos4": 0.0,
+          "captured_photos5": 0.04315828224959741,
+          "captured_photos6": 0.011949441390438386,
+          "captured_photos7": 0.0,
+          "captured_photos8": 0.002249796652821577,
+          "captured_photos9": 0.005317366853643269
+        },
+        "success_05": {
+          "capture_photos11": 0.0,
+          "captured_photos1": 0.0,
+          "captured_photos10": 0.0,
+          "captured_photos2": 0.0,
+          "captured_photos3": 0.0,
+          "captured_photos4": 0.0,
+          "captured_photos5": 0.0,
+          "captured_photos6": 0.0,
+          "captured_photos7": 0.0,
+          "captured_photos8": 0.0,
+          "captured_photos9": 0.0
+        },
+        "precision_20": {
+          "capture_photos11": 0.0,
+          "captured_photos1": 0.0,
+          "captured_photos10": 0.0,
+          "captured_photos2": 0.008710801393728223,
+          "captured_photos3": 0.0,
+          "captured_photos4": 0.0,
+          "captured_photos5": 0.0032051282051282055,
+          "captured_photos6": 0.0,
+          "captured_photos7": 0.0,
+          "captured_photos8": 0.0,
+          "captured_photos9": 0.0
+        },
+        "HOTA": {
+          "capture_photos11": 0.00037242856109504966,
+          "captured_photos1": 0.0002979669387422935,
+          "captured_photos10": 0.05263157894736842,
+          "captured_photos2": 0.0010486327037229713,
+          "captured_photos3": 0.00010025062656641604,
+          "captured_photos4": 0.0,
+          "captured_photos5": 0.03560594721154262,
+          "captured_photos6": 0.005810237442240838,
+          "captured_photos7": 0.0,
+          "captured_photos8": 0.0007974685073779262,
+          "captured_photos9": 0.0008377477009718511
+        },
+        "AssA": {
+          "capture_photos11": 0.00037242856109504966,
+          "captured_photos1": 0.0002979669387422935,
+          "captured_photos10": 0.05263157894736842,
+          "captured_photos2": 0.0010486327037229713,
+          "captured_photos3": 0.00010025062656641604,
+          "captured_photos4": 0.0,
+          "captured_photos5": 0.03560594721154262,
+          "captured_photos6": 0.005810237442240838,
+          "captured_photos7": 0.0,
+          "captured_photos8": 0.0007974685073779262,
+          "captured_photos9": 0.0008377477009718511
+        }
+      },
+      "bbox_iou": {
+        "mean": 0.013009218641601166,
+        "sample_sd": 0.02413558274598911
+      },
+      "success_05": {
+        "mean": 0.0,
+        "sample_sd": 0.0
+      },
+      "precision_20": {
+        "mean": 0.0010832663271687663,
+        "sample_sd": 0.0027063403784618654
+      },
+      "HOTA": {
+        "mean": 0.008863841694511671,
+        "sample_sd": 0.017916628584408237
+      },
+      "AssA": {
+        "mean": 0.008863841694511671,
+        "sample_sd": 0.017916628584408237
+      },
+      "pooled_official_trackeval": {
+        "HOTA": 0.0029742434744501954,
+        "DetA": 0.0005183153256162141,
+        "AssA": 0.01760658101716081,
+        "LocA": 0.7352391480576393,
+        "MOTA": -0.861996863565081,
+        "MOTP": 0.0
+      },
+      "provenance": "untrained task head; appendix only",
+      "source_sha256": {
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\capture_photos11\\boards\\a\\stark_rows.csv": "005da491728cefef13f40be6ae53643d072ae3338d5a1883628aaacd2d33e040",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\capture_photos11\\boards\\unknown_from_threshold\\stark_rows.csv": "bdde812e992695e5b7b9f83d01fd3a7efe80ba3b61c7a0eb0098bab290ee5033",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos1\\boards\\a\\stark_rows.csv": "697d06fbfb4b3835363749f8e8f37ec95916c6da7cd13b4a14c4d688006632db",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos1\\boards\\b\\stark_rows.csv": "677c2304cb9a6b5240aff772ed9ed7e78a292de3963e82aa5a3ab4eb9f4fa8d6",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos10\\boards\\a\\stark_rows.csv": "b192655ea9fca4ba3676af2f0dcbe53260c4384b17beb851eb32897e1957f95e",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos10\\boards\\b\\stark_rows.csv": "5cdbaa4775a592f3c52f08b6298cbfb24ce302fab87dd682130f1ed4a43e158d",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos2\\boards\\b\\stark_rows.csv": "8863041f342de62780cbe55595d4abf2452f2e9d1e9c5e9fc86e3bf44c566541",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos2\\boards\\c\\stark_rows.csv": "de63773e75fa1964ae1ba09b03c8f88d83493115fdab4bd60e8bd1bedd019940",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos3\\boards\\a\\stark_rows.csv": "51f701f647af43dd97b45a448b0a52ef70b47808cde8a4f8eae66f9aa615f9d9",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos3\\boards\\unknown_from_threshold\\stark_rows.csv": "3cc21176faf211be5f1d13eda5cbd93788b00e9a0eab78fc3c63bfdb6122878f",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos5\\boards\\b\\stark_rows.csv": "70dffe8e2978fbdbe7703a2521f8a55b2d1ea70e6348823c3a775be5ed6207ed",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos5\\boards\\c\\stark_rows.csv": "0d3691025a681caad97804e300d3d4758bf0480ea1dc460673e7b0ee1ca00f36",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos5\\boards\\unknown_from_threshold\\stark_rows.csv": "1ed321f29bbaefb520ad8a757d46624ffd84ff94e033dad88b8a2b84e090c14e",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos6\\boards\\a\\stark_rows.csv": "31ec1219686cdc6f61627eacd6ed67f273a15689297f7d7f22b8f20497de266f",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos6\\boards\\b\\stark_rows.csv": "cd2ceb1cbdf9bd493fc0df43e9e3ec7588910f1c9477cc2c0a8e9e0807b905ab",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos8\\boards\\a\\stark_rows.csv": "86767c8b1d8ea01651c4f50e97652befd236729e0eb827bea34bf1ea3e8938bd",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos8\\boards\\b\\stark_rows.csv": "b4fccfa605741fdf19397dfb04fbdad5cb09f6aeb1f285412b0e7b66f45841ac",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos8\\boards\\unknown_from_threshold\\stark_rows.csv": "a375d71e1931ed41bc23ac1d102a1ddf19fa5ca80dc75f22ca201f0819c16cb5",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos9\\boards\\b\\stark_rows.csv": "8463884c4feca1058b06dda0cf074fd085ba93e3cd0131aaeef86e1d777688a9",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos9\\boards\\c\\stark_rows.csv": "b1ee582446694dd22466335ebe1e1891ed58ab74e30bec6caff670aee731086d"
+      },
+      "missing_prediction_files": [
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos4\\stark_rows.csv",
+        "D:\\MIS_Pose_Track_Re3D\\Exp_Compare_iScience_GTMask\\captured_photos7\\stark_rows.csv"
+      ],
+      "predictions_outside_fixed_protocol_not_scored": 0,
+      "source_gt_coordinate_mismatches": 0,
+      "shared_gt_protocol_verified": true
+    }
+  },
+  "paired_tests": [
+    {
+      "reference": "Ours-Legacy",
+      "comparator": "NanoTrack",
+      "metric": "bbox_iou",
+      "n_groups": 11,
+      "groups": [
+        "capture_photos11",
+        "captured_photos1",
+        "captured_photos10",
+        "captured_photos2",
+        "captured_photos3",
+        "captured_photos4",
+        "captured_photos5",
+        "captured_photos6",
+        "captured_photos7",
+        "captured_photos8",
+        "captured_photos9"
+      ],
+      "mean_paired_difference": 0.005873318024800639,
+      "ci95_low": -0.0011501881120469944,
+      "ci95_high": 0.01797753558917713,
+      "p_two_sided": 0.625,
+      "improved": 3,
+      "degraded": 1,
+      "ties": 7,
+      "bootstrap_resamples": 20000,
+      "bootstrap_seed": 20261011,
+      "p_holm": 1.0
+    },
+    {
+      "reference": "Ours-Legacy",
+      "comparator": "NanoTrack",
+      "metric": "HOTA",
+      "n_groups": 11,
+      "groups": [
+        "capture_photos11",
+        "captured_photos1",
+        "captured_photos10",
+        "captured_photos2",
+        "captured_photos3",
+        "captured_photos4",
+        "captured_photos5",
+        "captured_photos6",
+        "captured_photos7",
+        "captured_photos8",
+        "captured_photos9"
+      ],
+      "mean_paired_difference": 0.002787289573920107,
+      "ci95_low": -0.0020679501452730313,
+      "ci95_high": 0.010310851345848186,
+      "p_two_sided": 0.75,
+      "improved": 2,
+      "degraded": 1,
+      "ties": 8,
+      "bootstrap_resamples": 20000,
+      "bootstrap_seed": 20261011,
+      "p_holm": 1.0
+    },
+    {
+      "reference": "Ours-Legacy",
+      "comparator": "NanoTrack",
+      "metric": "AssA",
+      "n_groups": 11,
+      "groups": [
+        "capture_photos11",
+        "captured_photos1",
+        "captured_photos10",
+        "captured_photos2",
+        "captured_photos3",
+        "captured_photos4",
+        "captured_photos5",
+        "captured_photos6",
+        "captured_photos7",
+        "captured_photos8",
+        "captured_photos9"
+      ],
+      "mean_paired_difference": 0.002787289573920107,
+      "ci95_low": -0.0020679501452730313,
+      "ci95_high": 0.010310851345848186,
+      "p_two_sided": 0.75,
+      "improved": 2,
+      "degraded": 1,
+      "ties": 8,
+      "bootstrap_resamples": 20000,
+      "bootstrap_seed": 20261011,
+      "p_holm": 1.0
+    },
+    {
+      "reference": "Ours-Legacy",
+      "comparator": "CSRT",
+      "metric": "bbox_iou",
+      "n_groups": 11,
+      "groups": [
+        "capture_photos11",
+        "captured_photos1",
+        "captured_photos10",
+        "captured_photos2",
+        "captured_photos3",
+        "captured_photos4",
+        "captured_photos5",
+        "captured_photos6",
+        "captured_photos7",
+        "captured_photos8",
+        "captured_photos9"
+      ],
+      "mean_paired_difference": 0.4540071370437971,
+      "ci95_low": 0.3460061413431194,
+      "ci95_high": 0.5546847566062919,
+      "p_two_sided": 0.0009765625,
+      "improved": 11,
+      "degraded": 0,
+      "ties": 0,
+      "bootstrap_resamples": 20000,
+      "bootstrap_seed": 20261011,
+      "p_holm": 0.0146484375
+    },
+    {
+      "reference": "Ours-Legacy",
+      "comparator": "CSRT",
+      "metric": "HOTA",
+      "n_groups": 11,
+      "groups": [
+        "capture_photos11",
+        "captured_photos1",
+        "captured_photos10",
+        "captured_photos2",
+        "captured_photos3",
+        "captured_photos4",
+        "captured_photos5",
+        "captured_photos6",
+        "captured_photos7",
+        "captured_photos8",
+        "captured_photos9"
+      ],
+      "mean_paired_difference": 0.4745095499126178,
+      "ci95_low": 0.35423429762896774,
+      "ci95_high": 0.5823063451498904,
+      "p_two_sided": 0.0009765625,
+      "improved": 11,
+      "degraded": 0,
+      "ties": 0,
+      "bootstrap_resamples": 20000,
+      "bootstrap_seed": 20261011,
+      "p_holm": 0.0146484375
+    },
+    {
+      "reference": "Ours-Legacy",
+      "comparator": "CSRT",
+      "metric": "AssA",
+      "n_groups": 11,
+      "groups": [
+        "capture_photos11",
+        "captured_photos1",
+        "captured_photos10",
+        "captured_photos2",
+        "captured_photos3",
+        "captured_photos4",
+        "captured_photos5",
+        "captured_photos6",
+        "captured_photos7",
+        "captured_photos8",
+        "captured_photos9"
+      ],
+      "mean_paired_difference": 0.4745095499126178,
+      "ci95_low": 0.35423429762896774,
+      "ci95_high": 0.5823063451498904,
+      "p_two_sided": 0.0009765625,
+      "improved": 11,
+      "degraded": 0,
+      "ties": 0,
+      "bootstrap_resamples": 20000,
+      "bootstrap_seed": 20261011,
+      "p_holm": 0.0146484375
+    },
+    {
+      "reference": "Ours-Legacy",
+      "comparator": "SAM",
+      "metric": "bbox_iou",
+      "n_groups": 11,
+      "groups": [
+        "capture_photos11",
+        "captured_photos1",
+        "captured_photos10",
+        "captured_photos2",
+        "captured_photos3",
+        "captured_photos4",
+        "captured_photos5",
+        "captured_photos6",
+        "captured_photos7",
+        "captured_photos8",
+        "captured_photos9"
+      ],
+      "mean_paired_difference": 0.41313071570406523,
+      "ci95_low": 0.3026592852284784,
+      "ci95_high": 0.5254033723006375,
+      "p_two_sided": 0.0009765625,
+      "improved": 11,
+      "degraded": 0,
+      "ties": 0,
+      "bootstrap_resamples": 20000,
+      "bootstrap_seed": 20261011,
+      "p_holm": 0.0146484375
+    },
+    {
+      "reference": "Ours-Legacy",
+      "comparator": "SAM",
+      "metric": "HOTA",
+      "n_groups": 11,
+      "groups": [
+        "capture_photos11",
+        "captured_photos1",
+        "captured_photos10",
+        "captured_photos2",
+        "captured_photos3",
+        "captured_photos4",
+        "captured_photos5",
+        "captured_photos6",
+        "captured_photos7",
+        "captured_photos8",
+        "captured_photos9"
+      ],
+      "mean_paired_difference": 0.42538736277434597,
+      "ci95_low": 0.31179094864620205,
+      "ci95_high": 0.5313345242102032,
+      "p_two_sided": 0.0009765625,
+      "improved": 11,
+      "degraded": 0,
+      "ties": 0,
+      "bootstrap_resamples": 20000,
+      "bootstrap_seed": 20261011,
+      "p_holm": 0.0146484375
+    },
+    {
+      "reference": "Ours-Legacy",
+      "comparator": "SAM",
+      "metric": "AssA",
+      "n_groups": 11,
+      "groups": [
+        "capture_photos11",
+        "captured_photos1",
+        "captured_photos10",
+        "captured_photos2",
+        "captured_photos3",
+        "captured_photos4",
+        "captured_photos5",
+        "captured_photos6",
+        "captured_photos7",
+        "captured_photos8",
+        "captured_photos9"
+      ],
+      "mean_paired_difference": 0.42538736277434597,
+      "ci95_low": 0.31179094864620205,
+      "ci95_high": 0.5313345242102032,
+      "p_two_sided": 0.0009765625,
+      "improved": 11,
+      "degraded": 0,
+      "ties": 0,
+      "bootstrap_resamples": 20000,
+      "bootstrap_seed": 20261011,
+      "p_holm": 0.0146484375
+    },
+    {
+      "reference": "Ours-Legacy",
+      "comparator": "YOLO",
+      "metric": "bbox_iou",
+      "n_groups": 11,
+      "groups": [
+        "capture_photos11",
+        "captured_photos1",
+        "captured_photos10",
+        "captured_photos2",
+        "captured_photos3",
+        "captured_photos4",
+        "captured_photos5",
+        "captured_photos6",
+        "captured_photos7",
+        "captured_photos8",
+        "captured_photos9"
+      ],
+      "mean_paired_difference": 0.633618584652548,
+      "ci95_low": 0.5061833519683762,
+      "ci95_high": 0.7251639268854353,
+      "p_two_sided": 0.0009765625,
+      "improved": 11,
+      "degraded": 0,
+      "ties": 0,
+      "bootstrap_resamples": 20000,
+      "bootstrap_seed": 20261011,
+      "p_holm": 0.0146484375
+    },
+    {
+      "reference": "Ours-Legacy",
+      "comparator": "YOLO",
+      "metric": "HOTA",
+      "n_groups": 11,
+      "groups": [
+        "capture_photos11",
+        "captured_photos1",
+        "captured_photos10",
+        "captured_photos2",
+        "captured_photos3",
+        "captured_photos4",
+        "captured_photos5",
+        "captured_photos6",
+        "captured_photos7",
+        "captured_photos8",
+        "captured_photos9"
+      ],
+      "mean_paired_difference": 0.6251589814982496,
+      "ci95_low": 0.48656948982816434,
+      "ci95_high": 0.7285917110987608,
+      "p_two_sided": 0.0009765625,
+      "improved": 11,
+      "degraded": 0,
+      "ties": 0,
+      "bootstrap_resamples": 20000,
+      "bootstrap_seed": 20261011,
+      "p_holm": 0.0146484375
+    },
+    {
+      "reference": "Ours-Legacy",
+      "comparator": "YOLO",
+      "metric": "AssA",
+      "n_groups": 11,
+      "groups": [
+        "capture_photos11",
+        "captured_photos1",
+        "captured_photos10",
+        "captured_photos2",
+        "captured_photos3",
+        "captured_photos4",
+        "captured_photos5",
+        "captured_photos6",
+        "captured_photos7",
+        "captured_photos8",
+        "captured_photos9"
+      ],
+      "mean_paired_difference": 0.6251589814982496,
+      "ci95_low": 0.48656948982816445,
+      "ci95_high": 0.7285917110987608,
+      "p_two_sided": 0.0009765625,
+      "improved": 11,
+      "degraded": 0,
+      "ties": 0,
+      "bootstrap_resamples": 20000,
+      "bootstrap_seed": 20261011,
+      "p_holm": 0.0146484375
+    },
+    {
+      "reference": "Ours-Legacy",
+      "comparator": "Cutie",
+      "metric": "bbox_iou",
+      "n_groups": 11,
+      "groups": [
+        "capture_photos11",
+        "captured_photos1",
+        "captured_photos10",
+        "captured_photos2",
+        "captured_photos3",
+        "captured_photos4",
+        "captured_photos5",
+        "captured_photos6",
+        "captured_photos7",
+        "captured_photos8",
+        "captured_photos9"
+      ],
+      "mean_paired_difference": 0.4242825809010223,
+      "ci95_low": 0.3315312312208627,
+      "ci95_high": 0.5102826722139311,
+      "p_two_sided": 0.0009765625,
+      "improved": 11,
+      "degraded": 0,
+      "ties": 0,
+      "bootstrap_resamples": 20000,
+      "bootstrap_seed": 20261011,
+      "p_holm": 0.0146484375
+    },
+    {
+      "reference": "Ours-Legacy",
+      "comparator": "Cutie",
+      "metric": "HOTA",
+      "n_groups": 11,
+      "groups": [
+        "capture_photos11",
+        "captured_photos1",
+        "captured_photos10",
+        "captured_photos2",
+        "captured_photos3",
+        "captured_photos4",
+        "captured_photos5",
+        "captured_photos6",
+        "captured_photos7",
+        "captured_photos8",
+        "captured_photos9"
+      ],
+      "mean_paired_difference": 0.4465607641479368,
+      "ci95_low": 0.3419365992377478,
+      "ci95_high": 0.5399112690181307,
+      "p_two_sided": 0.0009765625,
+      "improved": 11,
+      "degraded": 0,
+      "ties": 0,
+      "bootstrap_resamples": 20000,
+      "bootstrap_seed": 20261011,
+      "p_holm": 0.0146484375
+    },
+    {
+      "reference": "Ours-Legacy",
+      "comparator": "Cutie",
+      "metric": "AssA",
+      "n_groups": 11,
+      "groups": [
+        "capture_photos11",
+        "captured_photos1",
+        "captured_photos10",
+        "captured_photos2",
+        "captured_photos3",
+        "captured_photos4",
+        "captured_photos5",
+        "captured_photos6",
+        "captured_photos7",
+        "captured_photos8",
+        "captured_photos9"
+      ],
+      "mean_paired_difference": 0.44656076414793683,
+      "ci95_low": 0.3419365992377478,
+      "ci95_high": 0.5399112690181307,
+      "p_two_sided": 0.0009765625,
+      "improved": 11,
+      "degraded": 0,
+      "ties": 0,
+      "bootstrap_resamples": 20000,
+      "bootstrap_seed": 20261011,
+      "p_holm": 0.0146484375
+    }
+  ]
+}

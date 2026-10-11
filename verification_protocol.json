@@ -1,0 +1,33 @@
+{
+  "revision": "contour-verification-monitor-v1",
+  "created_before_external_test_evaluation": true,
+  "purpose": "Detect unreliable region-level localization without replacing a frozen proposer",
+  "proposers": ["official STARK-ST50", "official OpenCV NanoTrack"],
+  "training": "No additional neural network is trained; all descriptors use the first supplied target box",
+  "parameter_selection_split": "SurgT provided validation partition only",
+  "external_test_split": "SurgT provided test partition; evaluated only after parameter and alarm threshold freeze",
+  "preprocessing": "Official stereo rectification; use left view and retain every decoded frame for online updates",
+  "scored_frames": "Visible, non-difficult, valid left-view GT boxes after initialization; fixed independently of predictions",
+  "localization_failure_target": "Standard box IoU below 0.5",
+  "descriptor_size": 64,
+  "contour_percentile_candidates": [0.5, 0.68, 0.8],
+  "fusion_candidates": {
+    "contour_rank": [0.5, 0.5, 0.0, 0.0],
+    "contour_color": [0.45, 0.25, 0.3, 0.0],
+    "contour_color_confidence": [0.35, 0.25, 0.2, 0.2]
+  },
+  "feature_order": ["aligned_contour_distance", "rank_patch_disagreement", "color_disagreement", "native_confidence_risk"],
+  "selection_objective": "Equal-sequence mean failure AUROC on validation, averaged across both frozen proposers",
+  "threshold_selection": "Validation 90th percentile of reliable-frame risk (nominal specificity 0.90); no test-label calibration",
+  "primary_test_metrics": ["failure AUROC", "failure average precision", "sensitivity", "specificity", "alarm rate", "risk-coverage area"],
+  "primary_comparators": ["native proposer confidence", "rank-patch disagreement", "contour-only disagreement"],
+  "statistical_unit": "Sequence, with case-cluster bootstrap sensitivity analysis; unknown patient overlap explicitly disclosed",
+  "localization_output": "The underlying proposer box is unchanged, so verifier cannot improve or worsen its box IoU by construction",
+  "test_outcome_driven_model_selection": false,
+  "limitations": [
+    "Historical work on SurgT exists; this is a newly frozen cross-benchmark validation, not claimed as a never-seen patient cohort",
+    "The native benchmark reset/EAO scoring is not reproduced; this protocol uses continuous no-GT-reset tracking",
+    "Annotation-free refers to descriptor construction, not the initial target box or labeled validation calibration",
+    "A useful reliability monitor does not prove better localization or improved clinical navigation"
+  ]
+}

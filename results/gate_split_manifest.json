@@ -1,0 +1,353 @@
+[
+  {
+    "training_sequences": [
+      "EV3",
+      "IV1",
+      "IV2",
+      "IV3",
+      "IV4",
+      "IV5",
+      "IV6"
+    ],
+    "validation_sequences": [
+      "EV2"
+    ],
+    "test_sequences": [
+      "EV1"
+    ],
+    "seed": 20261011,
+    "best_validation_epoch": 1,
+    "epochs": 18,
+    "scalar_normalization_fit_on": [
+      "EV3",
+      "IV1",
+      "IV2",
+      "IV3",
+      "IV4",
+      "IV5",
+      "IV6"
+    ],
+    "checkpoint_and_threshold_selected_on": [
+      "EV2"
+    ],
+    "learned_components": [
+      "VisualQualityGate"
+    ],
+    "ContourSimilarityNet_used": false,
+    "offline_autoencoder_used": false,
+    "all_active_learned_components_test_excluded": true,
+    "training_input_sha256": "2bed267a39ed125370eac446131ad2fbcdeacc6123f6a63cfb6ab59e55ed5eae"
+  },
+  {
+    "training_sequences": [
+      "EV1",
+      "IV1",
+      "IV2",
+      "IV3",
+      "IV4",
+      "IV5",
+      "IV6"
+    ],
+    "validation_sequences": [
+      "EV3"
+    ],
+    "test_sequences": [
+      "EV2"
+    ],
+    "seed": 20261012,
+    "best_validation_epoch": 3,
+    "epochs": 18,
+    "scalar_normalization_fit_on": [
+      "EV1",
+      "IV1",
+      "IV2",
+      "IV3",
+      "IV4",
+      "IV5",
+      "IV6"
+    ],
+    "checkpoint_and_threshold_selected_on": [
+      "EV3"
+    ],
+    "learned_components": [
+      "VisualQualityGate"
+    ],
+    "ContourSimilarityNet_used": false,
+    "offline_autoencoder_used": false,
+    "all_active_learned_components_test_excluded": true,
+    "training_input_sha256": "2bed267a39ed125370eac446131ad2fbcdeacc6123f6a63cfb6ab59e55ed5eae"
+  },
+  {
+    "training_sequences": [
+      "EV1",
+      "EV2",
+      "IV2",
+      "IV3",
+      "IV4",
+      "IV5",
+      "IV6"
+    ],
+    "validation_sequences": [
+      "IV1"
+    ],
+    "test_sequences": [
+      "EV3"
+    ],
+    "seed": 20261013,
+    "best_validation_epoch": 5,
+    "epochs": 18,
+    "scalar_normalization_fit_on": [
+      "EV1",
+      "EV2",
+      "IV2",
+      "IV3",
+      "IV4",
+      "IV5",
+      "IV6"
+    ],
+    "checkpoint_and_threshold_selected_on": [
+      "IV1"
+    ],
+    "learned_components": [
+      "VisualQualityGate"
+    ],
+    "ContourSimilarityNet_used": false,
+    "offline_autoencoder_used": false,
+    "all_active_learned_components_test_excluded": true,
+    "training_input_sha256": "2bed267a39ed125370eac446131ad2fbcdeacc6123f6a63cfb6ab59e55ed5eae"
+  },
+  {
+    "training_sequences": [
+      "EV1",
+      "EV2",
+      "EV3",
+      "IV3",
+      "IV4",
+      "IV5",
+      "IV6"
+    ],
+    "validation_sequences": [
+      "IV2"
+    ],
+    "test_sequences": [
+      "IV1"
+    ],
+    "seed": 20261014,
+    "best_validation_epoch": 1,
+    "epochs": 18,
+    "scalar_normalization_fit_on": [
+      "EV1",
+      "EV2",
+      "EV3",
+      "IV3",
+      "IV4",
+      "IV5",
+      "IV6"
+    ],
+    "checkpoint_and_threshold_selected_on": [
+      "IV2"
+    ],
+    "learned_components": [
+      "VisualQualityGate"
+    ],
+    "ContourSimilarityNet_used": false,
+    "offline_autoencoder_used": false,
+    "all_active_learned_components_test_excluded": true,
+    "training_input_sha256": "2bed267a39ed125370eac446131ad2fbcdeacc6123f6a63cfb6ab59e55ed5eae"
+  },
+  {
+    "training_sequences": [
+      "EV1",
+      "EV2",
+      "EV3",
+      "IV1",
+      "IV4",
+      "IV5",
+      "IV6"
+    ],
+    "validation_sequences": [
+      "IV3"
+    ],
+    "test_sequences": [
+      "IV2"
+    ],
+    "seed": 20261015,
+    "best_validation_epoch": 1,
+    "epochs": 18,
+    "scalar_normalization_fit_on": [
+      "EV1",
+      "EV2",
+      "EV3",
+      "IV1",
+      "IV4",
+      "IV5",
+      "IV6"
+    ],
+    "checkpoint_and_threshold_selected_on": [
+      "IV3"
+    ],
+    "learned_components": [
+      "VisualQualityGate"
+    ],
+    "ContourSimilarityNet_used": false,
+    "offline_autoencoder_used": false,
+    "all_active_learned_components_test_excluded": true,
+    "training_input_sha256": "2bed267a39ed125370eac446131ad2fbcdeacc6123f6a63cfb6ab59e55ed5eae"
+  },
+  {
+    "training_sequences": [
+      "EV1",
+      "EV2",
+      "EV3",
+      "IV1",
+      "IV2",
+      "IV5",
+      "IV6"
+    ],
+    "validation_sequences": [
+      "IV4"
+    ],
+    "test_sequences": [
+      "IV3"
+    ],
+    "seed": 20261016,
+    "best_validation_epoch": 2,
+    "epochs": 18,
+    "scalar_normalization_fit_on": [
+      "EV1",
+      "EV2",
+      "EV3",
+      "IV1",
+      "IV2",
+      "IV5",
+      "IV6"
+    ],
+    "checkpoint_and_threshold_selected_on": [
+      "IV4"
+    ],
+    "learned_components": [
+      "VisualQualityGate"
+    ],
+    "ContourSimilarityNet_used": false,
+    "offline_autoencoder_used": false,
+    "all_active_learned_components_test_excluded": true,
+    "training_input_sha256": "2bed267a39ed125370eac446131ad2fbcdeacc6123f6a63cfb6ab59e55ed5eae"
+  },
+  {
+    "training_sequences": [
+      "EV1",
+      "EV2",
+      "EV3",
+      "IV1",
+      "IV2",
+      "IV3",
+      "IV6"
+    ],
+    "validation_sequences": [
+      "IV5"
+    ],
+    "test_sequences": [
+      "IV4"
+    ],
+    "seed": 20261017,
+    "best_validation_epoch": 3,
+    "epochs": 18,
+    "scalar_normalization_fit_on": [
+      "EV1",
+      "EV2",
+      "EV3",
+      "IV1",
+      "IV2",
+      "IV3",
+      "IV6"
+    ],
+    "checkpoint_and_threshold_selected_on": [
+      "IV5"
+    ],
+    "learned_components": [
+      "VisualQualityGate"
+    ],
+    "ContourSimilarityNet_used": false,
+    "offline_autoencoder_used": false,
+    "all_active_learned_components_test_excluded": true,
+    "training_input_sha256": "2bed267a39ed125370eac446131ad2fbcdeacc6123f6a63cfb6ab59e55ed5eae"
+  },
+  {
+    "training_sequences": [
+      "EV1",
+      "EV2",
+      "EV3",
+      "IV1",
+      "IV2",
+      "IV3",
+      "IV4"
+    ],
+    "validation_sequences": [
+      "IV6"
+    ],
+    "test_sequences": [
+      "IV5"
+    ],
+    "seed": 20261018,
+    "best_validation_epoch": 18,
+    "epochs": 18,
+    "scalar_normalization_fit_on": [
+      "EV1",
+      "EV2",
+      "EV3",
+      "IV1",
+      "IV2",
+      "IV3",
+      "IV4"
+    ],
+    "checkpoint_and_threshold_selected_on": [
+      "IV6"
+    ],
+    "learned_components": [
+      "VisualQualityGate"
+    ],
+    "ContourSimilarityNet_used": false,
+    "offline_autoencoder_used": false,
+    "all_active_learned_components_test_excluded": true,
+    "training_input_sha256": "2bed267a39ed125370eac446131ad2fbcdeacc6123f6a63cfb6ab59e55ed5eae"
+  },
+  {
+    "training_sequences": [
+      "EV2",
+      "EV3",
+      "IV1",
+      "IV2",
+      "IV3",
+      "IV4",
+      "IV5"
+    ],
+    "validation_sequences": [
+      "EV1"
+    ],
+    "test_sequences": [
+      "IV6"
+    ],
+    "seed": 20261019,
+    "best_validation_epoch": 2,
+    "epochs": 18,
+    "scalar_normalization_fit_on": [
+      "EV2",
+      "EV3",
+      "IV1",
+      "IV2",
+      "IV3",
+      "IV4",
+      "IV5"
+    ],
+    "checkpoint_and_threshold_selected_on": [
+      "EV1"
+    ],
+    "learned_components": [
+      "VisualQualityGate"
+    ],
+    "ContourSimilarityNet_used": false,
+    "offline_autoencoder_used": false,
+    "all_active_learned_components_test_excluded": true,
+    "training_input_sha256": "2bed267a39ed125370eac446131ad2fbcdeacc6123f6a63cfb6ab59e55ed5eae"
+  }
+]

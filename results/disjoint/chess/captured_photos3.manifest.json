@@ -1,0 +1,49 @@
+{
+  "checkpoint_sha256": "ae35da57b1c3670b786433fca303eddb2a3a1d3f8eb49211907f146c7110117e",
+  "test_sequences": [
+    "chess:captured_photos3"
+  ],
+  "validation_sequences": [
+    "chess:captured_photos4",
+    "trackves:IV2"
+  ],
+  "training_sequences": [
+    "chess:capture_photos11",
+    "chess:captured_photos1",
+    "chess:captured_photos10",
+    "chess:captured_photos2",
+    "chess:captured_photos5",
+    "chess:captured_photos6",
+    "chess:captured_photos7",
+    "chess:captured_photos8",
+    "chess:captured_photos9",
+    "trackves:EV1",
+    "trackves:EV2",
+    "trackves:EV3",
+    "trackves:IV1",
+    "trackves:IV3",
+    "trackves:IV4",
+    "trackves:IV5",
+    "trackves:IV6"
+  ],
+  "initialization": "random; no legacy checkpoint",
+  "all_learned_components_test_excluded": true,
+  "epochs": 60,
+  "sampled_pairs_per_epoch": 1024,
+  "batch_size": 64,
+  "learning_rate": 0.0003,
+  "optimizer": "AdamW",
+  "seed": 20261015,
+  "best_validation_epoch": 3,
+  "best_validation_mse": 0.13445711228996515,
+  "training_targets": "image-derived fixed-gray rasters and synthetic pair similarity",
+  "pixel_annotation_supervision": false,
+  "roi_box_supervision": true,
+  "cache_sha256": "b66206a121254cc978354b0a6f66dbca85862e18f5488eb4910f90c478fd2523",
+  "fold_checkpoint_exactly_verified_at_inference": true,
+  "confidence_checkpoint": "D:\\MIS_Pose_Track_Re3D\\BSPC_Submission_v2\\08_Resubmission_Revision_20260917\\Mathematics_Fair_Evaluation\\results\\contour_folds\\chess_captured_photos3.pt",
+  "external_fitted_fusion_head": null,
+  "offline_autoencoder_loaded": false,
+  "online_test_sequence_fine_tuning": false,
+  "protocol": "shared first-GT initialization; GT-frame updates"
+}

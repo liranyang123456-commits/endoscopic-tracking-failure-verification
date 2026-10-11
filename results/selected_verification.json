@@ -1,0 +1,200 @@
+{
+  "percentile": 0.8,
+  "fusion_name": "contour_color_confidence",
+  "weights": [
+    0.35,
+    0.25,
+    0.2,
+    0.2
+  ],
+  "validation_auroc_by_proposer": {
+    "stark": 0.9454095668246751,
+    "nanotrack": 0.9401241323650013
+  },
+  "objective": 0.9427668495948383,
+  "protocol_sha256": "70bae517642c8d20dcfb17a980048024c0dc2ce961098be88537e7647aa8253c",
+  "comparators": {
+    "native_confidence": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "rank_only": [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    "contour_only": [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "verification": [
+      0.35,
+      0.25,
+      0.2,
+      0.2
+    ]
+  },
+  "alarm_thresholds": {
+    "stark": {
+      "native_confidence": 0.8848084345459938,
+      "rank_only": 0.41730437949299815,
+      "contour_only": 0.3154384344816209,
+      "verification": 0.38452832110226165
+    },
+    "nanotrack": {
+      "native_confidence": 0.2653463125228882,
+      "rank_only": 0.41722646504640587,
+      "contour_only": 0.34412166476249706,
+      "verification": 0.2635474273189903
+    }
+  },
+  "selection_split": "SurgT supplied validation partition",
+  "test_labels_used_for_selection": false,
+  "test_predictions_used_for_selection": false,
+  "validation_source_sha256": {
+    "stark": "306b62cd53046d2446db455636808f608ec278ee7df17f4cc3a22d7f2b91874c",
+    "nanotrack": "e4a7baaeca3bf5deff032148dea5da21ed97a7416b355bdff79e0697a466f154"
+  },
+  "all_validation_candidates": [
+    {
+      "percentile": 0.5,
+      "fusion_name": "contour_rank",
+      "weights": [
+        0.5,
+        0.5,
+        0.0,
+        0.0
+      ],
+      "validation_auroc_by_proposer": {
+        "stark": 0.8993696169895088,
+        "nanotrack": 0.9153449724755326
+      },
+      "objective": 0.9073572947325207
+    },
+    {
+      "percentile": 0.5,
+      "fusion_name": "contour_color",
+      "weights": [
+        0.45,
+        0.25,
+        0.3,
+        0.0
+      ],
+      "validation_auroc_by_proposer": {
+        "stark": 0.9089073985663447,
+        "nanotrack": 0.9568493906490114
+      },
+      "objective": 0.9328783946076781
+    },
+    {
+      "percentile": 0.5,
+      "fusion_name": "contour_color_confidence",
+      "weights": [
+        0.35,
+        0.25,
+        0.2,
+        0.2
+      ],
+      "validation_auroc_by_proposer": {
+        "stark": 0.936102562524168,
+        "nanotrack": 0.9454492644600867
+      },
+      "objective": 0.9407759134921274
+    },
+    {
+      "percentile": 0.68,
+      "fusion_name": "contour_rank",
+      "weights": [
+        0.5,
+        0.5,
+        0.0,
+        0.0
+      ],
+      "validation_auroc_by_proposer": {
+        "stark": 0.907434839306114,
+        "nanotrack": 0.917050208608608
+      },
+      "objective": 0.912242523957361
+    },
+    {
+      "percentile": 0.68,
+      "fusion_name": "contour_color",
+      "weights": [
+        0.45,
+        0.25,
+        0.3,
+        0.0
+      ],
+      "validation_auroc_by_proposer": {
+        "stark": 0.9187762171843918,
+        "nanotrack": 0.9540764290167592
+      },
+      "objective": 0.9364263231005755
+    },
+    {
+      "percentile": 0.68,
+      "fusion_name": "contour_color_confidence",
+      "weights": [
+        0.35,
+        0.25,
+        0.2,
+        0.2
+      ],
+      "validation_auroc_by_proposer": {
+        "stark": 0.939812070960093,
+        "nanotrack": 0.9415715091262585
+      },
+      "objective": 0.9406917900431757
+    },
+    {
+      "percentile": 0.8,
+      "fusion_name": "contour_rank",
+      "weights": [
+        0.5,
+        0.5,
+        0.0,
+        0.0
+      ],
+      "validation_auroc_by_proposer": {
+        "stark": 0.9179929364722831,
+        "nanotrack": 0.91867133376314
+      },
+      "objective": 0.9183321351177116
+    },
+    {
+      "percentile": 0.8,
+      "fusion_name": "contour_color",
+      "weights": [
+        0.45,
+        0.25,
+        0.3,
+        0.0
+      ],
+      "validation_auroc_by_proposer": {
+        "stark": 0.9287641656138484,
+        "nanotrack": 0.9512522289793902
+      },
+      "objective": 0.9400081972966193
+    },
+    {
+      "percentile": 0.8,
+      "fusion_name": "contour_color_confidence",
+      "weights": [
+        0.35,
+        0.25,
+        0.2,
+        0.2
+      ],
+      "validation_auroc_by_proposer": {
+        "stark": 0.9454095668246751,
+        "nanotrack": 0.9401241323650013
+      },
+      "objective": 0.9427668495948383
+    }
+  ]
+}

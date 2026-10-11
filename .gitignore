@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+external/OSTrack/
+external/STARK/
+external/TrackEval/
+weights/*.pt
+weights/*.pth
+weights/*.tar
+weights/*.onnx
+results/frozen_trackves_frames/*/
+results/smoke*/
+*.npz

@@ -1,0 +1,40 @@
+{
+  "training_sequences": [
+    "EV2",
+    "EV3",
+    "IV1",
+    "IV2",
+    "IV3",
+    "IV4",
+    "IV5"
+  ],
+  "validation_sequences": [
+    "EV1"
+  ],
+  "test_sequences": [
+    "IV6"
+  ],
+  "seed": 20261019,
+  "best_validation_epoch": 2,
+  "epochs": 18,
+  "scalar_normalization_fit_on": [
+    "EV2",
+    "EV3",
+    "IV1",
+    "IV2",
+    "IV3",
+    "IV4",
+    "IV5"
+  ],
+  "checkpoint_and_threshold_selected_on": [
+    "EV1"
+  ],
+  "learned_components": [
+    "VisualQualityGate"
+  ],
+  "ContourSimilarityNet_used": false,
+  "offline_autoencoder_used": false,
+  "all_active_learned_components_test_excluded": true,
+  "training_input_sha256": "2bed267a39ed125370eac446131ad2fbcdeacc6123f6a63cfb6ab59e55ed5eae",
+  "checkpoint_sha256": "ed9c5d4267db92fba7a80041ddd99992c9b97f070c926505c254a7a60925b0ba"
+}

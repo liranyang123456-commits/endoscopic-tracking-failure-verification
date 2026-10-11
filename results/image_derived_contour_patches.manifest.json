@@ -1,0 +1,10 @@
+{
+  "sequence_count": 20,
+  "patch_count": 1216,
+  "patches_per_sequence_limit": 64,
+  "training_input": "fixed-gray-cutoff image raster inside annotated ROI boxes",
+  "human_pixel_masks_used_as_training_targets": false,
+  "roi_box_supervision": true,
+  "cache_sha256": "b66206a121254cc978354b0a6f66dbca85862e18f5488eb4910f90c478fd2523",
+  "cached_heldout_patches_are_never_used_in_fitting": true
+}
