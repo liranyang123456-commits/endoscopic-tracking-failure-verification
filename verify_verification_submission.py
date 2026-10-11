@@ -118,6 +118,7 @@ def main() -> None:
         "17 with defined sequence-level AUROC", "16 for STARK-ST50",
         f"includes {primary_auc_test['n_groups']} sequences with defined AUROC",
         "five case-group", "held-out", "Proposition 2",
+        "github.com/liranyang123456-commits/endoscopic-tracking-failure-verification",
     )
     manuscript = subprocess.check_output(
         ["pdftotext", "-layout", str(DEST / "Manuscript_Mathematics.pdf"), "-"],
