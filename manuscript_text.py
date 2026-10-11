@@ -963,11 +963,12 @@ def cover(results: dict, heldout: dict) -> str:
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{lmodern}
-\usepackage[margin=22mm]{geometry}
+\usepackage[top=16mm,bottom=16mm,left=20mm,right=20mm]{geometry}
 \usepackage[hidelinks]{hyperref}
 \usepackage{setspace}
-\setstretch{1.05}
+\setstretch{1.0}
 \pagestyle{empty}
+\setlength{\parskip}{4pt}
 \signature{Ranyang Li\\
 Henan University of Technology\\
 \href{mailto:lry@haut.edu.cn}{lry@haut.edu.cn}\\
@@ -983,19 +984,19 @@ Section Managing Editor\\
 
 Please consider our original research article ``""" + TITLE + r"""'' for the \textit{Mathematics} Special Issue ``Mathematical Methods for Image Processing and Understanding, 2nd Edition''.
 
-The paper addresses a verification problem in image-guided endoscopy: a region-level tracker can lose a deforming soft-tissue target and keep returning a plausible box with unchanged confidence. We propose a mask-free appearance-consistency layer that compares midrank intensities, a fixed-density gradient-quantile contour set, a color histogram and the tracker's own confidence between each unchanged proposal and the supplied initial region, and fuses them into a bounded risk. We prove elementary properties of the trimmed contour distance and give the alarm threshold a split-conformal construction with a finite-sample, sequence-level specificity guarantee (Proposition 2).
+\textbf{Significance and context.} Image-guided endoscopy overlays safety regions on live video and relies on region-level trackers to follow deforming soft tissue; a drifting tracker keeps returning a plausible box with unchanged confidence. Existing failure signals (forward--backward error, correlation-filter peak statistics, learned quality heads, the detector of the LT-SAT safety-area tracker) are tracker-specific or need a trained model, and none has been evaluated on a public soft-tissue benchmark under a protocol frozen before the test data were used. We propose a mask-free appearance-consistency layer that compares midrank intensities, a gradient-quantile contour set, a color histogram and the tracker's confidence between each unchanged proposal and the initial region; it attaches to any box-producing tracker, trains no network and never alters a box.
 
-All parameters were frozen on the SurgT validation partition before the test partition was used. Around the official NanoTrack, STARK-ST50 and held-out OSTrack trackers, the test failure AUROC rises from """ + (
+\textbf{Fit to \textit{Mathematics}.} The contribution is mathematical rather than architectural: order statistics of ordinal intensities, a trimmed contour distance on distance transforms with proven elementary properties and a Monte Carlo chance level, Hellinger distance, convex fusion, and a split-conformal alarm threshold with a finite-sample, sequence-level specificity guarantee (Proposition~2), evaluated with paired permutation and hierarchical-bootstrap statistics. This lies squarely within the scope of the Special Issue on mathematical methods for image processing and understanding.
+
+\textbf{Findings.} With all parameters frozen on the SurgT validation partition, the test failure AUROC around the official NanoTrack, STARK-ST50 and held-out OSTrack trackers rises from """ + (
         f"{nano['native_confidence']['sequence_macro']['failure_auroc']['mean']:.3f} to {nano['verification']['sequence_macro']['failure_auroc']['mean']:.3f}, "
         f"{stark['native_confidence']['sequence_macro']['failure_auroc']['mean']:.3f} to {stark['verification']['sequence_macro']['failure_auroc']['mean']:.3f} and "
         f"{ost['native_confidence']['sequence_macro']['failure_auroc']['mean']:.3f} to {ost['verification']['sequence_macro']['failure_auroc']['mean']:.3f}, respectively"
-    ) + r""", with paired sequence statistics, exact permutation tests and case-cluster bootstrap intervals. Cue ablations, sensitivity analyses, a transfer to two further benchmarks and every non-significant comparison are reported; the layer never alters a box and costs about 1.4~ms per frame. Code, the frozen protocol and all per-frame results are public at\\
+    ) + r"""; most first failure episodes are flagged within one or two frames at about 1.4~ms per frame. Ablations show that ordinal and contour statistics each carry most of the information; sensitivity analyses, a transfer to two further benchmarks and every non-significant comparison are reported. Code, the frozen protocol and all per-frame results are public at\\
 \url{https://github.com/liranyang123456-commits/endoscopic-tracking-failure-verification}\\
 (tag v1.0-submission).
 
-Copilot SDK in VS Code assisted with language editing and drafting; the authors reviewed all material and take full responsibility for the content.
-
-This manuscript has not previously been submitted to an MDPI journal, has not been published and is not under consideration by another journal. All authors have approved the submission and declare no conflict of interest.
+\textbf{Declarations.} This manuscript has not previously been submitted to an MDPI journal. We confirm that neither the manuscript nor any parts of its content are currently under consideration for publication with or published in another journal. All authors have approved the manuscript and agree with its submission to \textit{Mathematics}. The authors declare no conflict of interest. Copilot SDK in VS Code assisted with language editing and drafting; the authors reviewed all material and take full responsibility for the content.
 
 Corresponding authors: Ranyang Li (\href{mailto:lry@haut.edu.cn}{lry@haut.edu.cn}; \href{mailto:liranyang666@buaa.edu.cn}{liranyang666@buaa.edu.cn})\\
 and Zhipeng Lin (\href{mailto:linzhi_p@outlook.com}{linzhi\_p@outlook.com}).
