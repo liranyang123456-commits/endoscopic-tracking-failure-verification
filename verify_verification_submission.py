@@ -216,7 +216,8 @@ def main() -> None:
         "upload_folder_contains_current_pdfs": final_pdfs_match,
         "author_confirmation": {
             "submission_history_confirmed": True,
-            "all_author_approval_confirmed": False,
+            "all_author_approval_confirmed": True,
+            "all_author_approval_confirmed_by": "corresponding author Ranyang Li, 12 October 2026",
         },
         "manuscript_source_sha256": sha256(DEST / "Manuscript_Mathematics.tex"),
         "pdf_sha256": sha256(DEST / "Manuscript_Mathematics.pdf"),
