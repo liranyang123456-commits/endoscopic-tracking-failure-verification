@@ -1,4 +1,4 @@
-"""Manuscript and cover-letter text for the revised verification submission.
+﻿"""Manuscript and cover-letter text for the revised verification submission.
 
 Every number in the generated LaTeX is read from the result JSON files; the
 module contains prose, table layouts and the mathematical statements only.
@@ -90,6 +90,10 @@ def abstract_text(results: dict, heldout: dict, supplementary: dict) -> str:
 
 def preamble(original_tex: str) -> str:
     text = original_tex[:original_tex.index(r"\abstract{")]
+    text = text.replace(
+        r"\corres{Correspondence: lry@haut.edu.cn (R.L.); linzhi\_p@outlook.com (Z.L.)}",
+        r"\corres{Correspondence: lry@haut.edu.cn or liranyang666@buaa.edu.cn (R.L.); linzhi\_p@outlook.com (Z.L.)}",
+    )
     text = re.sub(r"\\Title\{[^}]*\}", lambda _: r"\Title{" + TITLE + "}", text, count=1)
     return text
 
@@ -952,32 +956,53 @@ def manuscript(results: dict, transfer: dict, segmentation: dict, tracking: dict
 
 
 def cover(results: dict, heldout: dict) -> str:
-    original = (ORIGINAL / "Cover_Letter_Mathematics.tex").read_text(encoding="utf-8")
-    original = original.replace("Annotation-Free Contour Verification for Region-Level Tracking of Deforming Soft Tissue in Endoscopy", TITLE)
-    original = original.replace(
-        "All authors have read and approved this submission",
-        "Before submission, the corresponding author will confirm that all co-authors have reviewed and approved the final files",
-    )
-    start = original.index("The article addresses")
-    end = original.index("This manuscript has not previously been submitted")
     nano = results["proposers"]["nanotrack"]["methods"]
     stark = results["proposers"]["stark"]["methods"]
     ost = heldout["methods"]
-    body = (
-        "The manuscript addresses failure awareness in region-level endoscopic soft-tissue tracking: a frozen tracker can keep returning a plausible box after losing a deforming target, "
-        "and its native confidence need not reveal the loss. We propose a mask-free appearance-consistency layer that monitors the unchanged proposals of any box-producing tracker and reports a bounded risk. "
-        "The initial target box is supplied and labeled validation sequences calibrate the threshold; no manually drawn pixel masks and no additional network are needed.\n\n"
-        "The mathematical content is an empirical midrank representation, gradient-quantile contour sets, a trimmed symmetric contour distance whose elementary properties and Monte Carlo chance level we establish, "
-        "Fourier-domain phase correlation, the Hellinger distance between color histograms, and a convex fusion. The alarm threshold is given a sequence-level split-conformal construction with a finite-sample specificity guarantee under exchangeability (Proposition 2), "
-        "and the complete procedure is specified as Algorithm 1.\n\n"
-        "The evaluation on the public SurgT benchmark freezes every parameter on the validation partition before the test partition is touched, uses the official pretrained STARK-ST50 and NanoTrack trackers for selection and the official OSTrack tracker as a held-out proposer, "
-        "keeps complete shared denominators, and reports failure-ranking, operating-point, selective-risk and detection-latency metrics with paired sequence statistics, exact permutation tests and case-cluster bootstrap intervals. "
-        f"NanoTrack failure AUROC rises from {nano['native_confidence']['sequence_macro']['failure_auroc']['mean']:.3f} to {nano['verification']['sequence_macro']['failure_auroc']['mean']:.3f}, STARK-ST50 from "
-        f"{stark['native_confidence']['sequence_macro']['failure_auroc']['mean']:.3f} to {stark['verification']['sequence_macro']['failure_auroc']['mean']:.3f}, and the held-out OSTrack from "
-        f"{ost['native_confidence']['sequence_macro']['failure_auroc']['mean']:.3f} to {ost['verification']['sequence_macro']['failure_auroc']['mean']:.3f}. Cue ablations, post-hoc sensitivity analyses, a transfer to TrackVes and a controlled benchmark, qualitative cases, "
-        "and an earlier unsuccessful box-overwriting fusion tracker are all reported, including every non-significant comparison. The layer leaves localization unchanged, costs about 1.4 ms per frame and does not claim validated clinical safety.\n\n"
-        "The frozen protocol, all scripts, per-frame results and checksums are publicly available at\\\\ "
-        "\\url{https://github.com/liranyang123456-commits/endoscopic-tracking-failure-verification} (tag v1.0-submission)\\\\ and also accompany the submission as supplementary material. "
-        "Copilot SDK in VS Code assisted with language editing and with drafting method descriptions, figures and evaluation scripts; the authors reviewed all generated material and are responsible for the accuracy and integrity of the content.\n\n"
-    )
-    return original[:start] + body + original[end:]
+    return r"""\documentclass[10pt,a4paper]{letter}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[margin=22mm]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage{setspace}
+\setstretch{1.05}
+\pagestyle{empty}
+\signature{Ranyang Li\\
+Henan University of Technology\\
+\href{mailto:lry@haut.edu.cn}{lry@haut.edu.cn}\\
+\href{mailto:liranyang666@buaa.edu.cn}{liranyang666@buaa.edu.cn}}
+\address{Ranyang Li\\
+Henan University of Technology, Zhengzhou 450001, China}
+\date{11 October 2026}
+\begin{document}
+\begin{letter}{Ms.\ Helene Hu\\
+Section Managing Editor\\
+\textit{Mathematics} Editorial Office, MDPI}
+\opening{Dear Ms.\ Hu,}
+
+Please consider our original research article ``""" + TITLE + r"""'' for the \textit{Mathematics} Special Issue ``Mathematical Methods for Image Processing and Understanding, 2nd Edition''.
+
+The paper addresses a verification problem in image-guided endoscopy: a region-level tracker can lose a deforming soft-tissue target and keep returning a plausible box with unchanged confidence. We propose a mask-free appearance-consistency layer that compares midrank intensities, a fixed-density gradient-quantile contour set, a color histogram and the tracker's own confidence between each unchanged proposal and the supplied initial region, and fuses them into a bounded risk. We prove elementary properties of the trimmed contour distance and give the alarm threshold a split-conformal construction with a finite-sample, sequence-level specificity guarantee (Proposition 2).
+
+All parameters were frozen on the SurgT validation partition before the test partition was used. Around the official NanoTrack, STARK-ST50 and held-out OSTrack trackers, the test failure AUROC rises from """ + (
+        f"{nano['native_confidence']['sequence_macro']['failure_auroc']['mean']:.3f} to {nano['verification']['sequence_macro']['failure_auroc']['mean']:.3f}, "
+        f"{stark['native_confidence']['sequence_macro']['failure_auroc']['mean']:.3f} to {stark['verification']['sequence_macro']['failure_auroc']['mean']:.3f} and "
+        f"{ost['native_confidence']['sequence_macro']['failure_auroc']['mean']:.3f} to {ost['verification']['sequence_macro']['failure_auroc']['mean']:.3f}, respectively"
+    ) + r""", with paired sequence statistics, exact permutation tests and case-cluster bootstrap intervals. Cue ablations, sensitivity analyses, a transfer to two further benchmarks and every non-significant comparison are reported; the layer never alters a box and costs about 1.4~ms per frame. Code, the frozen protocol and all per-frame results are public at\\
+\url{https://github.com/liranyang123456-commits/endoscopic-tracking-failure-verification}\\
+(tag v1.0-submission).
+
+Copilot SDK in VS Code assisted with language editing and drafting; the authors reviewed all material and take full responsibility for the content.
+
+This manuscript has not previously been submitted to an MDPI journal, has not been published and is not under consideration by another journal. All authors have approved the submission and declare no conflict of interest.
+
+Corresponding authors: Ranyang Li (\href{mailto:lry@haut.edu.cn}{lry@haut.edu.cn}; \href{mailto:liranyang666@buaa.edu.cn}{liranyang666@buaa.edu.cn})\\
+and Zhipeng Lin (\href{mailto:linzhi_p@outlook.com}{linzhi\_p@outlook.com}).
+
+Thank you for considering the manuscript.
+
+\closing{Yours sincerely,}
+\end{letter}
+\end{document}
+"""
